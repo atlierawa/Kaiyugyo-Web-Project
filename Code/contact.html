@@ -63,11 +63,18 @@ function checkForm(){
   }
   else{
     status=true;
-    $('section.form-container').animate({height:0,opacity:0},300);
-    $('span.submit-message').delay(500).css({display:'inherit'}).animate({opacity:100},700);
+    $('section.form-container').animate({height:0,opacity:0},300,'linear');
+    $('span.submit-message').css({display:'inherit'}).animate({opacity:100},500,'linear');
+    $('body').attr({onbeforeunload:''});
   }
   return status;
 }
+</script>
+<script type="text/javascript">
+$(window).load(function(){
+  var adjHeight=document.body.scrollHeight;
+  $('body').height(adjHeight);
+});
 </script>
 </head>
 <body dir="ltr">
