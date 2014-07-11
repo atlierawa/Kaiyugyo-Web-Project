@@ -50,6 +50,7 @@ textarea {
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://a32a3981177653e571bf4ea4eacb9a9cfeaa3f59.googledrive.com/host/0BzJ85gfBqH38alZka1QtOHk2LU0/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
 <script type="text/javascript">
 function checkForm(){
   var status=false;     
@@ -65,16 +66,10 @@ function checkForm(){
     status=true;
     $('section.form-container').animate({height:0,opacity:0},300,'linear');
     $('span.submit-message').css({display:'inherit'}).animate({opacity:100},500,'linear');
-    $('body').attr({onbeforeunload:''});
+    // $('body').attr({onbeforeunload:''});
   }
   return status;
 }
-</script>
-<script type="text/javascript">
-$(window).load(function(){
-  var adjHeight=document.body.scrollHeight;
-  $('body').height(adjHeight);
-});
 </script>
 </head>
 <body dir="ltr">
