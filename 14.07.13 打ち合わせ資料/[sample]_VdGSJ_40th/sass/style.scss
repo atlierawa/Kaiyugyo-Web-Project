@@ -1,0 +1,277 @@
+// Settings
+
+@charset 'UTF-8';
+@import 'compass';
+
+// Variables
+
+$color-red: #a63232;
+$color-blue: #315165;
+$color-darkbrown: #8c805d;
+$color-lightbrown: #f2ebc9;
+$color-green: #73a65b;
+
+$body-width: 800px;
+$serif: 'Cochin', 'Times New Roman', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'MS Mincho', serif;
+$sans-serif: 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Hiragino Kaku Gothic ProN', 'MS Gothic', sans-serif;
+$text-color: #191919;
+
+// Mixins
+
+@mixin cf {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin flag($position, $offset, $height, $color) {
+  content: " ";
+  position: absolute;
+  top: 0;
+  #{$position}: -$offset;
+  height: 0;
+  width: 0;
+  border: $height solid $color;
+  border-#{$position}-color: transparent;
+}
+
+@mixin border($color) {
+  border-left: solid 1px $color;
+  border-right: solid 1px $color;
+}
+
+@mixin stack($order, $position:relative) {
+  position: $position;
+  z-index: floor(1 / $order * 100);
+}
+
+@mixin margin($i, $j:$i, $k:$i, $l:$j) {
+  margin: $i * 10 + px $j * 10 + px $k * 10 + px $l * 10 + px;
+  margin: $i + rem $j + rem $k + rem $l + rem;
+}
+
+@mixin padding($i, $j:$i, $k:$i, $l:$j) {
+  padding: $i * 10 + px $j * 10 + px $k * 10 + px $l * 10 + px;
+  padding: $i + rem $j + rem $k + rem $l + rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size * 10 + px;
+  font-size: $size + rem;
+}
+
+/* Default styles */
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $serif;
+  background-image: url('../images/bg-pattern.png');
+}
+
+a, p, span, dl, ol, ul {
+  font-family: $sans-serif;
+  @include font-size(1.3);
+  line-height: 1.618;
+  color: $text-color;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+}
+
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
+/* Style templates */
+
+.separation {
+  border-bottom: 1px solid rgba($color-lightbrown,0.9);
+  @include box-shadow(0 1px 0 rgba(255,255,255,0.9));
+}
+
+.label {
+  @include inline-block;
+  a {
+    @include inline-block;
+    @include padding(0.5,0.8);
+    font-family: $serif;
+    @include border-radius(3px);
+    font-weight: bold;
+    background-color: $color-blue;
+    color: #fff;
+    @include transition(all 200ms ease-out);
+    &:hover {
+      background-color: $color-red;
+    }
+  }
+}
+
+.button {
+  text-align: center;
+  li {
+    @include margin(2.1);
+    @extend .label;
+    a {
+      position: relative;
+    }
+  }
+} 
+
+/* Main styles */
+
+#container {
+  position: relative;
+  max-width: $body-width;
+  margin: 0 auto;
+}
+
+// header
+
+header {
+  @include padding(3.4,3.4,0);
+  background-color: $color-lightbrown;
+  @include background(linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0)), url('../images/header-texture.png'));
+  text-align: center;
+  border-top: solid 1px $color-blue;
+  border-bottom: solid 1px $color-lightbrown;
+  @include box-shadow(0 3px 3px rgba(0,0,0,0.1));
+  @include border($color-lightbrown);
+  @include stack(1);
+  h1 {
+    position: relative;
+    @include margin(0,0,1.3);
+    @include font-size(3.4);
+    font-weight: lighter;
+    background-color: $color-red;
+    color: #fff;
+    line-height: 56px;
+    @include inline-block;
+    &:before {
+      @include stack(-1);
+      @include flag(left,50px,28px,$color-red);
+    }
+    &:after {
+      @include stack(-1);
+      @include flag(right,50px,28px,$color-red);
+    }
+  }
+  span {
+    display: block;
+    font-family: $serif;
+    @include font-size(3.4);
+    font-weight: bold;
+    color: $color-red;
+    @include text-shadow(rgba(255,255,255,0.6) 1px 1px 0);
+  }
+}
+
+nav li {
+  @include margin(2.1);
+  @extend .label;
+}
+
+// article
+
+article {
+  background-color: #fff;
+  border-bottom: soid 1px $color-lightbrown;
+  @include border($color-lightbrown);
+  @include box-shadow(inset 0 0 30px $color-lightbrown, 0 3px 3px rgba(0,0,0,0.1));
+  @include stack(2);
+}
+
+.panel {
+  @include clearfix;
+  width: 100%;
+  @include padding(2.1,3.4,5.5);
+  h2 {
+    @include margin(3.4,0,0);
+    @include font-size(2.1);
+    color: $color-blue;
+    &:before {
+      content: "◊ ";
+      display: inline;
+    }
+  }
+  &:last-child {
+    border-bottom: solid 1px $color-lightbrown;
+  }
+}
+
+// article img
+
+.logo-image {
+  float: right;
+  max-width: 160px;
+  @include margin(0,0,0,5.5);
+}
+
+.map-image {
+  float: right;
+  max-width: 250px;
+}
+
+// article ul
+
+.map-links li {
+  @include margin(1.3,2.1);
+  display: block;
+  a {
+    @include inline-block;
+    @include padding(0.5,0.8);
+    font-family: $serif;
+    color: $color-blue;
+    @include border-radius(3px);
+    @include transition(all 200ms ease-out);
+    &:hover {
+      font-weight: bold;
+      background-color: $color-blue;
+      color: #fff;
+    }
+  }
+}
+
+// footer
+
+footer {
+  @include padding(2.1,3.4);
+  background-color: $color-blue;
+  @include background(linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,0.15)), url('../images/footer-texture.png'));
+  @include border($color-darkbrown);
+  @include box-shadow(0 3px 3px rgba(0,0,0,0.1));
+  @include stack(3);
+  @include clearfix;
+  ul {
+    display: inline;
+    li {
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+      a {
+        font-family: $serif;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+  }
+}

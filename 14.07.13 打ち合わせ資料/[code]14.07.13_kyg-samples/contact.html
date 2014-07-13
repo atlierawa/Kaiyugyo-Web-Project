@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>kyg-sample</title>
+<link rel="stylesheet" href="css/feather_2.0_min.css" />
+
+<!-- PLUGIN CSS -->
+<link rel="stylesheet" href="js/swipebox-master/src/css/swipebox.min.css">
+<link rel="stylesheet" href="js/Magnific-Popup-master/dist/magnific-popup.css">
+<link rel="stylesheet" href="js/Boxer-master/jquery.fs.boxer.css">
+
+<style type="text/css" media="screen">
+#container, #content {
+  width: 700px;
+}
+p.section-break {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+img.sample-map {
+  display: block;
+}
+.sample-gallery {
+  overflow: hidden;
+}
+.sample-gallery a:hover {
+    
+}
+.sample-gallery a {
+  overflow: hidden;
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: auto 62px 62px 0;
+}
+.sample-gallery img {
+  width: 150px;
+  height: 150px;
+}
+.sample-gallery.css img {
+  transition: all 0.7s ease-in-out;
+  -webkit-transform: scaleY(1);
+}
+.sample-gallery.css img:hover {
+  opacity: 0;
+  -webkit-transform: scale(10);
+}
+a.mailto-link {
+  border-bottom: dotted 1px #888;
+  transition: all 0.7s ease-in-out;
+}
+body{background:#fff;color:#888}::-moz-selection{background:#6DC0A9;color:#fff;text-shadow:none}::selection{background:#6DC0A9;color:#fff; text-shadow:none;}header .links a, header .links a:link, header .links a:visited, header .description a, header .description a:link, header .description a:visited, .post p a, .post p a:link, .post p a:visited, #pagination a, #pageination a:link, #pagination a:visited, ol.notes li a, ol.notes li a:link, ol.notes li a:visited, .question a, .question a:link, .question a:visited {color:#6DC0A9}header .links a:hover, header .description a:hover, #pagination a:hover, .post p a:hover, .link h2 a:hover, ol.notes li a:hover{color:#333}header h1 a {color:#333}header h1 a:hover {color:#000}header .description {color:#919191}#content .post .postmeta a, #content .post .postmeta a:link, #content .post .postmeta a:visited {color:#ccc}#content .post .postmeta a:hover {color:#333}#disqus_thread {width:500px;padding: 0 0 75px 0;}
+</style>
+
+<script src="js/jquery.min.js"></script>
+
+<!-- PLUGIN JS -->
+<script src="js/swipebox-master/src/js/jquery.swipebox.min.js"></script>
+<script src="js/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+<script src="js/Boxer-master/jquery.fs.boxer.min.js"></script>
+<script src="js/iframe-resizer/js/iframeResizer.min.js"></script>
+</head>
+
+<body>
+<div id="container">
+  <header>
+    <h1><a href="index.html">kyg-samples</a></h1>
+    <div class="links">
+      <ul>
+        <li><a href="maps.html">maps</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <div id="content">
+    <div class="text post">
+      <h2>Contact</h2>
+      <p class="section-break">&lt;Text Link&gt;</p>
+      <p><a class="mailto-link" href="mailto:sample@kyg-sample.com" title="mailto">sample@kyg-sample.com</a></p>
+      <p class="section-break">&lt;Graphic Link&gt;</p>
+      <p><img alt="mailto" src="img/mailto-sample.png"/></p>
+      <p class="section-break">&lt;Google Form&gt;</p>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.contact-form').iFrameResize([{}]);
+        });
+      </script>
+      <p><iframe class="contact-form" frameborder="0" height="auto" marginheight="0" marginwidth="0" src="contact-form.html" width="100%">Loading…</iframe></p>
+      <div class="postmeta"><a href="">Notes (0)</a></div>
+    </div>
+  </div>
+  <footer>
+  </footer>
+</div>
+</body>
+</html>
