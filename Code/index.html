@@ -10,26 +10,39 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
+  Last updated 2014.07.19 / Ver 0.1
 -->
 <html>
-<!-- Header settings -->
 <head>
-<meta charset="UTF-8">
+<!-- meta charset="UTF-8" -->
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta name="robots" content="all">
 <meta name="keywords" content="">
 <meta name="description" content="{Description}">
-<meta name="author" content="#">
-<title>{block:SearchPage}Search results for: {SearchQuery}{/block:SearchPage}{block:PostTitle}{PostTitle} / {/block:PostTitle}{Title}</title>
+<meta name="author" content="Cafe & ガラス工房 海遊魚">
+<!-- Social settings -->
+<meta property="og:title" content="{PostTitle}">
+<meta property="og:type" content="article">
+<meta property="og:image" content="{PortraitURL-128}">
+<meta property="og:url" content="#">
+<meta property="og:site_name" content="{Title}">
+<meta property="og:description" content="{Description}">
+<!-- General settings -->
+<title>{block:SearchPage}Search results for: {SearchQuery}{/block:SearchPage}{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}</title>
 <link rel="shortcut icon" href="{Favicon}">
 <link rel="apple-touch-icon" href="{PortraitURL-128}">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
+<!-- CSS files -->
 <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="js/Boxer-master/jquery.fs.boxer.css">
 <!-- jQuery libs and scripts -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!--[if lt IE 9]>
   <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<script src="js/Boxer-master/jquery.fs.boxer.min.js"></script>
+<script src="js/iframe-resizer/js/iframeResizer.min.js"></script>
 </head>
 <!-- Main contetns -->
 <body>
@@ -55,11 +68,10 @@
   </section>
 </article>
 <footer role="contentinfo" class="class">
-  <div class="container">
-    <ul>
-      <li>Copyright&nbsp;&copy;&nbsp;#tumblrcode&nbsp;<a href="/">Owner</a></a></li>
-    </ul>
-  </div>
+  <ul>
+    <li>Copyright&nbsp;&copy;&nbsp;#tumblrcode&nbsp;<a href="/">Owner</a></a></li>
+  </ul>
+  <form role="search"></form>
 </footer>
 </body>
 </html>

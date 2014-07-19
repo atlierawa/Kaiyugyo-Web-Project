@@ -1,56 +1,31 @@
 <!doctype html>
+<!--
+     ___       ___       ___       ___       ___       ___   
+    /\  \     /\__\     /\  \     /\  \     /\  \     /\  \  
+   /::\  \   /:/ _/_   /::\  \   _\:\  \   /::\  \   /::\  \ 
+  /:/\:\__\ /:/_/\__\ /::\:\__\ /\/::\__\ /::\:\__\ /:/\:\__\
+  \:\/:/  / \:\/:/  / \;:::/  / \::/\/__/ \;:::/  / \:\/:/  /
+   \::/  /   \::/  /   |:\/__/   \:\__\    |:\/__/   \::/  / 
+    \/__/     \/__/     \|__|     \/__/     \|__|     \/__/  
+
+  Designed and coded by Creative Office OUR*IRO
+  http://atlierawa.tumblr.com
+  Last updated 2014.07.19 / Ver 0.1
+-->
 <html>
+<!-- Header settings -->
 <head>
-<link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png" type="image/x-icon">
-<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;">
-<meta name="fragment" content="!">
-<base target="_blank">
-<style type="text/css">
-* {
-  padding: 0;
-  margin-left: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  outline: 0
-}
-body {
-  font: normal 12px Georgia,'Times New Roman',Times,serif;
-  color: #888
-}
-section {
-  margin-bottom: 1em;
-}
-section.form-container {
-  overflow: hidden;
-  margin-bottom: 0;
-  opacity: 100
-}
-span {
-  line-height: 22px;
-  margin: 0 0 15px 0
-}
-span.required {
-  color: #6DC0A9
-}
-span.submit-message {
-  display: none;
-  opacity: 0
-}
-input, textarea {
-  padding: 2px;
-  color: #888
-}
-textarea {
-  border-top-style: inset
-}
-::-webkit-input-placeholder {
-  font-style: italic
-}
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://a32a3981177653e571bf4ea4eacb9a9cfeaa3f59.googledrive.com/host/0BzJ85gfBqH38alZka1QtOHk2LU0/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
+<!-- meta charset="UTF-8" -->
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<!-- CSS files -->
+<link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- jQuery libs and scripts -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
 <script type="text/javascript">
 function checkForm(){
   var status=false;     
@@ -66,12 +41,13 @@ function checkForm(){
     status=true;
     $('section.form-container').animate({height:0,opacity:0},300,'linear');
     $('span.submit-message').css({display:'inherit'}).animate({opacity:100},500,'linear');
-    // $('body').attr({onbeforeunload:''});
   }
   return status;
 }
 </script>
 </head>
+<!-- Main contetns -->
+<body>
 <body dir="ltr">
 <article itemscope itemtype="http://schema.org/CreativeWork/FormObject">
   <section class="form-container">
