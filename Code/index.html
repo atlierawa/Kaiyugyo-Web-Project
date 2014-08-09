@@ -42,33 +42,50 @@
 </head>
 <!-- Main contetns -->
 <body>
-<header role="banner">
-  <section id="TitleWrapper" class="panel">
-    <div class="container">
-      <h1>Title</h1>
-      <nav role="navigation">
-        <ul>
-          <li><a href="#">Nav1</a></li>
-          <li><a href="#">Nav2</a></li>
-          <li><a href="#">Nav3</a></li>
-        </ul>
-      </nav>
+<div id="cover-container">
+  <div id="cover-bg">
+    <div id="cover-fg">
+      <button type="button" onclick="hideCover()" class="close-button">x</button>
+      <p>Cafe &amp; ガラス工房 海遊魚</p></p>
+      <img alt="logo" src="img/image_1.png" />
+      <ul>
+        <li>nav 1</li>
+        <li>nav 2</li>
+        <li>nav 3</li>
+        <li>...</li>
+      </ul>
     </div>
-  </section>
-</header>
-<article role="main">
-  <section id="#" class="#">
-    <div class="container">
-      <h2>Subtitle</h2>
-    </div>
-  </section>
-</article>
-<footer role="contentinfo" class="class">
-  <ul>
-    <li>Copyright&nbsp;&copy;&nbsp;#tumblrcode&nbsp;<a href="/">Owner</a></a></li>
-  </ul>
-  <form role="search"></form>
-</footer>
+  </div>
+</div>
+<div id="contents-container">
+  <header role="banner">
+    <section id="TitleWrapper" class="panel">
+      <div class="container">
+        <h1>Title</h1>
+        <nav role="navigation">
+          <ul>
+            <li><a href="#">Nav1</a></li>
+            <li><a href="#">Nav2</a></li>
+            <li><a href="#">Nav3</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <article role="main">
+    <section id="#" class="#">
+      <div class="container">
+        <h2>Subtitle</h2>
+      </div>
+    </section>
+  </article>
+  <footer role="contentinfo" class="class">
+    <ul>
+      <li>Copyright&nbsp;&copy;&nbsp;#tumblrcode&nbsp;<a href="/">Owner</a></a></li>
+    </ul>
+    <form role="search"></form>
+  </footer>
+</div>
 <!-- jQuery libs and scripts -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/Boxer-master/jquery.fs.boxer.min.js"></script>
@@ -81,6 +98,12 @@
 
   ga('create', 'UA-53010814-1', 'auto');
   ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+  function hideCover(){
+    $('#cover-container').animate({'opacity':0},500,'linear');
+    $('#contents-container').delay(500).css({'z-index':400});
+  }
 </script>
 </body>
 </html>
