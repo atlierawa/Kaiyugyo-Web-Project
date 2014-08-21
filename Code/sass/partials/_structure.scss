@@ -1,0 +1,25 @@
+// Structure partial
+
+.panel {
+  min-width: 100%;
+  position: relative;
+  border-bottom: solid 1px black;
+}
+
+.contents-wrapper {
+  width: 1020px;
+  height: 760px;
+  margin: 0 auto;
+  @include padding(2.1);
+}
+
+footer {
+  min-width: 100%;
+  position: relative;
+  @include padding(2.1,0);  
+}
+
+.footer-wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}

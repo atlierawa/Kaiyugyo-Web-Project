@@ -10,25 +10,24 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2014.07.19 / Ver 0.1
+  Last updated 2014.08.21 / Ver 0.2
 -->
 <html>
 <head>
-<!-- meta charset="UTF-8" -->
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta name="robots" content="all">
 <meta name="keywords" content="">
-<meta name="description" content="{Description}">
-<meta name="author" content="Cafe & ガラス工房 海遊魚">
+<meta name="description" content="{MetaDescription}">
+<meta name="author" content="{Title}">
 <!-- Social settings -->
 <meta property="og:title" content="{PostTitle}">
 <meta property="og:type" content="article">
 <meta property="og:image" content="{PortraitURL-128}">
 <meta property="og:url" content="#">
 <meta property="og:site_name" content="{Title}">
-<meta property="og:description" content="{Description}">
+<meta property="og:description" content="{MetaDescription}">
 <!-- General settings -->
-<title>{block:SearchPage}Search results for: {SearchQuery}{/block:SearchPage}{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}</title>
+<title>{block:SearchPage}Search results for: {SearchQuery} | {/block:SearchPage}{block:PostTitle}{PostTitle} | {/block:PostTitle}{Title}</title>
 <link rel="shortcut icon" href="{Favicon}">
 <link rel="apple-touch-icon" href="{PortraitURL-128}">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
@@ -42,68 +41,125 @@
 </head>
 <!-- Main contetns -->
 <body>
-<div id="cover-container">
-  <div id="cover-bg">
-    <div id="cover-fg">
-      <button type="button" onclick="hideCover()" class="close-button">x</button>
-      <p>Cafe &amp; ガラス工房 海遊魚</p></p>
-      <img alt="logo" src="img/image_1.png" />
-      <ul>
-        <li>nav 1</li>
-        <li>nav 2</li>
-        <li>nav 3</li>
-        <li>...</li>
-      </ul>
+<article role="main" id="">
+  <header role="banner" class="panel">
+    <div class="contents-wrapper">
+      <h1><a href="{BlogURL}" title="">Use background-image for logo</a></h1>
+      <section id="">お知らせ</section>
+      <section id="">お休み</section>
+      <span>Please scroll</span>
     </div>
-  </div>
-</div>
-<div id="contents-container">
-  <header role="banner">
-    <section id="TitleWrapper" class="panel">
-      <div class="container">
-        <h1>Title</h1>
-        <nav role="navigation">
-          <ul>
-            <li><a href="#">Nav1</a></li>
-            <li><a href="#">Nav2</a></li>
-            <li><a href="#">Nav3</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
   </header>
-  <article role="main">
-    <section id="#" class="#">
-      <div class="container">
-        <h2>Subtitle</h2>
-      </div>
-    </section>
-  </article>
-  <footer role="contentinfo" class="class">
+
+  <section id="" class="panel">
+    <a id="index"></a>
+    <div class="contents-wrapper">
+      <h2 class="">Use background-image for logo</h2>
+      <p>Discription</p>
+      <nav role="navigation">
+        <a href="#cafe" id="" class="ancher-scroll" title="">Cafe</a>
+        <a href="#kidsroom" id="" class="ancher-scroll" title="">Kids Room</a>
+        <a href="#atlier" id="" class="ancher-scroll" title="">Atlier</a>
+        <a href="/access" id="" title="">Access</a>
+        <a href="/contact" id="" title="">Contact</a>
+        <a href="/links" id="" title="">Links</a>
+      </nav>
+      <section id="">Park</section>
+    </div>
+  </section>
+
+  <section id="" class="panel">
+    <a id="cafe"></a>
+    <div class="contents-wrapper">
+      <section id="" class="">
+        <h2 class="">Cafe</h2>
+        <p></p>
+      </section>
+      <section id="" class="">
+        <h2 class="">Recipe</h2>
+        <p></p>
+      </section>
+      <a href="#index" class="ancher-scroll" title="">Index</a>
+    </div>
+  </section>
+
+  <section id="" class="panel">
+    <a id="kidsroom"></a>
+    <div class="contents-wrapper">
+      <h2 class="">Kids Room</h2>
+      <p></p>
+      <p></p>
+      <ul>
+        <li><img></li>
+        <li><img></li>
+        <li><img></li>
+        <li><img></li>
+      </ul>
+      <a href="#index" class="ancher-scroll" title="">Index</a>
+    </div>
+  </section>
+
+  <section id="" class="panel">
+    <a id="atlier"></a>
+    <div class="contents-wrapper">
+      <h2 class="">Atlier</h2>
+      <p></p>
+      <p></p>
+      <ul>
+        <li><img></li>
+        <li><img></li>
+        <li><img></li>
+        <li><img></li>
+      </ul>
+      <a href="#index" class="ancher-scroll" title="">Index</a>
+    </div>
+  </section>  
+<article>
+<footer role="contentinfo">
+  <div class="footer-wrapper">
     <ul>
-      <li>Copyright&nbsp;&copy;&nbsp;#tumblrcode&nbsp;<a href="/">Owner</a></a></li>
+      <li>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a></li>
+      <li>Design and coded by <a href="" title="" target="_blank">OUR*IRO</a></li>
     </ul>
-    <form role="search"></form>
-  </footer>
-</div>
+    <section id="" class="">
+      <a href="/access" title="">Access</a>
+      <a href="/contact" title="">Contact</a>
+      <a href="/links" title="">Links</a>
+      <a href="#" title="" class="top-scroll">Top</a>
+    </section>
+  </div>
+</footer>
 <!-- jQuery libs and scripts -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/Boxer-master/jquery.fs.boxer.min.js"></script>
 <script type="text/javascript" src="js/iframe-resizer/js/iframeResizer.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-53010814-1', 'auto');
-  ga('send', 'pageview');
+<script type="text/javascript"> // Minimized Google Analytics code
+$(window).on('load',function(){
+  $.getScript('//www.google-analytics.com/analytics.js');
+  ga = function(){
+    ga.q.push(arguments);
+  };
+  ga.q = [['create', 'UA-53010814-1', 'auto'], ['send', 'pageview']]
+  ga.l = 1 * new Date();
+});
 </script>
-<script type="text/javascript">
-  function hideCover(){
-    $('#cover-container').animate({'opacity':0},500,'linear');
-    $('#contents-container').delay(500).css({'z-index':400});
-  }
+<script type="text/javascript"> // Smooth scrolling effect
+$(function() {
+  $('.ancher-scroll').click(function(){
+//    if((window.location.href == {JSBlogURL}) || window.location.hash){
+      var i = $(this).attr('href');
+    console.log('href:',i);    
+      var j = $(i).offset().top;
+    console.log('offset:',j);
+      $('html,body').animate({scrollTop:j},'fast');
+      return false;
+//    }
+  });
+  $('.top-scroll').click(function(){
+    $('html,body').animate({scrollTop:0},'fast');
+    return false;
+  });
+});
 </script>
 </body>
 </html>
