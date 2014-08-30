@@ -10,7 +10,7 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2014.08.21 / Ver 0.2
+  Last updated 2014.08.30 / Ver 0.3
 -->
 <html>
 <head>
@@ -32,8 +32,8 @@
 <link rel="apple-touch-icon" href="{PortraitURL-128}">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}">
 <!-- CSS files -->
-<link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/vendor/normalize.css">
+<link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/style.css">
 <link rel="stylesheet" href="js/Boxer-master/jquery.fs.boxer.css">
 <!--[if lt IE 9]>
   <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,26 +42,38 @@
 <!-- Main contetns -->
 <body>
 <article role="main" id="">
+  {block:SearchPage}<--{/block:SearchPage}
+  {block:TagPage}<!--{/block:TagPage}
+  {block:IndexPage}
   <header role="banner" class="panel">
     <div class="contents-wrapper">
       <h1><a href="{BlogURL}" title=""></a></h1>
       <section id="notice-wrapper">
         <section class="notice">
-          <h3>最新のお知らせ</h3>
+          <h3><a href="/tagged/お知らせ" title="最新のお知らせ">最新のお知らせ</a></h3>
           <ul id="latest">
             <li>2014/08/21 - お知らせ1</li>
             <li>2014/08/20 - お知らせ2</li>
           </ul>
         </section>
         <section class="notice">
-          <h3>休みのお知らせ</h3>
+          <h3><a href="/tagged/お休み" title="お休みのお知らせ">お休みのお知らせ</a></h3>
           <ul id="closings">
             <li>2014/08/20 - お知らせ2</li>
             <li>2014/08/19 - お知らせ3</li>
           </ul>
         </section>
       </section>
-      <span>Please scroll</span>
+      <nav role="navigation">
+        <a href="#cafe" id="" class="ancher-scroll" title="">Cafe</a>
+        <a href="#kidsroom" id="" class="ancher-scroll" title="">Kids Room</a>
+        <a href="#atlier" id="" class="ancher-scroll" title="">Atlier</a>
+        <a href="/tagged/photos" id="" title="">Photos</a>
+        <a href="/access" id="" title="">Access</a>
+        <a href="/contact" id="" title="">Contact</a>
+        <a href="/links" id="" title="">Links</a>
+        <a href="/archives" id="" title="">Archive</a>
+      </nav>
     </div>
   </header>
 
@@ -70,15 +82,7 @@
     <div class="contents-wrapper">
       <h2 class="">Use background-image for logo</h2>
       <p>Discription</p>
-      <nav role="navigation">
-        <a href="#cafe" id="" class="ancher-scroll" title="">Cafe</a>
-        <a href="#kidsroom" id="" class="ancher-scroll" title="">Kids Room</a>
-        <a href="#atlier" id="" class="ancher-scroll" title="">Atlier</a>
-        <a href="/access" id="" title="">Access</a>
-        <a href="/contact" id="" title="">Contact</a>
-        <a href="/links" id="" title="">Links</a>
-      </nav>
-      <section id="">Park</section>
+      <section id="">どんぐり公園</section>
     </div>
   </section>
 
@@ -127,26 +131,43 @@
       </ul>
       <a href="#index" class="ancher-scroll" title="">Index</a>
     </div>
-  </section>  
+  </section>
+  {/block:IndexPage}
+  {block:TagPage}-->{/block:TagPage}
+  {block:SearchPage}-->{/block:SearchPage}
+
+  {block:PermalinkPage}
+  <section id="" class="">
+    {block:Posts}{block:Text}
+    {block:Title}<h2>{Title}</h2>{/block:Title}
+    {Body}
+    {/block:Text}{/block:Posts}
+  </section>
+  {/block:PermalinkPage}
+
+  {block:TagPage}
+  <section id="" class="{TagsAsClasses}">
+    <h2>{Tag}</h2>
+    {block:Posts}{block:Text}
+    {block:Title}<h4>{Title}</h4>{/block:Title}
+    {Body}
+    {/block:Text}{/block:Posts}
+  </section>
+  {/block:TagPage}
 <article>
 <footer role="contentinfo">
   <div class="footer-wrapper">
     <ul>
       <li>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a></li>
       <li>Design and coded by <a href="" title="" target="_blank">OUR*IRO</a></li>
+      <li><a href="#" title="" class="top-scroll">Top</a></li>
     </ul>
-    <section id="" class="">
-      <a href="/access" title="">Access</a>
-      <a href="/contact" title="">Contact</a>
-      <a href="/links" title="">Links</a>
-      <a href="#" title="" class="top-scroll">Top</a>
-    </section>
   </div>
 </footer>
 <!-- jQuery libs and scripts -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/Boxer-master/jquery.fs.boxer.min.js"></script>
-<script type="text/javascript" src="js/iframe-resizer/js/iframeResizer.min.js"></script>
+<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/js/iframe-resizer/js/iframeResizer.min.js"></script>
 <script type="text/javascript"> // Minimized Google Analytics code
 $(window).on('load',function(){
   $.getScript('//www.google-analytics.com/analytics.js');
@@ -165,12 +186,12 @@ $(function() {
     console.log('href:',i);    
       var j = $(i).offset().top;
     console.log('offset:',j);
-      $('html,body').animate({scrollTop:j},'fast');
+      $('html,body').animate({scrollTop:j},'slow');
       return false;
 //    }
   });
   $('.top-scroll').click(function(){
-    $('html,body').animate({scrollTop:0},'fast');
+    $('html,body').animate({scrollTop:0},'slow');
     return false;
   });
 });
