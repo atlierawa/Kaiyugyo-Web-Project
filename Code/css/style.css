@@ -20,7 +20,7 @@
 /* line 13, ../sass/partials/_structure.scss */
 .contents-wrapper {
   width: 1020px;
-  height: 760px;
+  min-height: 760px;
   position: relative;
   margin: 0 auto;
   padding: 21px 21px 21px 21px;
