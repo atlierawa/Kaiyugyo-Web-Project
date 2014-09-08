@@ -42,8 +42,10 @@
 <!-- Main contetns -->
 <body>
 <article role="main" id="">
-  {block:SearchPage}<--{/block:SearchPage}
+<!--
+  {block:SearchPage}<!--{/block:SearchPage}
   {block:TagPage}<!--{/block:TagPage}
+-->
   {block:IndexPage}
   <header role="banner" class="panel">
     <div class="contents-wrapper">
@@ -84,6 +86,7 @@
       <p>Discription</p>
       <h3>どんぐり公園</h3>
       <p>「庭のどんぐり（マテバシイ）の木の下に、木製のシーソー、ブランコ、滑り台、鉄棒やハンモックがあります。やんちゃ盛りのちびっこも元気に遊べます。<br />よ～く見てみるといろんな虫や植物や鳥に出会えるよ！</p>
+      <a href="#cafe" class="ancher-scroll panel-scroll" title="">Next</a>
     </div>
   </section>
 
@@ -98,6 +101,7 @@
         <h2 class="">Recipe</h2>
         <p></p>
       </section>
+      <a href="#kidsroom" class="ancher-scroll panel-scroll" title="">Next</a>
       <a href="#index" class="ancher-scroll" title="">Index</a>
     </div>
   </section>
@@ -113,6 +117,7 @@
         <li><img></li>
         <li><img></li>
       </ul>
+      <a href="#atlier" class="ancher-scroll panel-scroll" title="">Next</a>
       <a href="#index" class="ancher-scroll" title="">Index</a>
     </div>
   </section>
@@ -129,6 +134,7 @@
         <li><img></li>
         <li><img></li>
       </ul>
+      <a href="#access" class="ancher-scroll panel-scroll" title="">Next</a>
       <a href="#index" class="ancher-scroll" title="">Index</a>
     </div>
   </section>
@@ -151,6 +157,8 @@
         <li>工房では宙吹きガラス、サンドキャスト、サンドブラストを体験していただけます。ご希望の方は5日前までにご連絡をお願いいたします。</li>
         <li>※金曜日以外にご希望の場合は、2週間前までにご連絡ください。</li>
       </ul>
+      <a href="#contact" class="ancher-scroll panel-scroll" title="">Next</a>
+      <a href="#index" class="ancher-scroll" title="">Index</a>
     </div>
   </section>
 
@@ -160,21 +168,24 @@
       <h2 class="">Contact</h2>
       <section id="contact-form-wrapper">
         <h3>Form</h3>
-        <form action="https://docs.google.com/forms/d/1dEOSAopcxvSCyg9V_3R-V6Mk9VHAEPZmXUaUg6RnEzY/formResponse" method="post" name="ss-form" id="ss-form" class="form-container" target="submit_iframe" onsubmit="return checkForm()">
+        <form action="https://docs.google.com/forms/d/1F1VVluWubR3eW5QlOmihmiQjkrKwinfMCkS-5vvwT2A/formResponse" method="post" name="ss-form" id="ss-form" class="form-container" target="submit_iframe" onsubmit="return checkForm()">
           <iframe hidden name="submit_iframe" id="submit_iframe"></iframe>
           <section>
-            <input type="text" size="30" name="entry.1902549149" placeholder="Your Name" id="entry_1902549149" class="form-name" dir="auto" aria-label="Name" aria-required="true" required>
+            <input type="text" size="30" name="entry.1811059406" placeholder="お名前" id="entry_1811059406" class="form-name" dir="auto" aria-label="Name" aria-required="true" required>
           </section>
           <section>
-            <input type="email" size="30" name="entry.441788654" placeholder="Your E-mail Address" id="entry_441788654" class="form-email" dir="auto" aria-label="E-Mail Address" aria-required="true" required>
+            <input type="email" size="30" name="entry.1139801517" placeholder="メールアドレス" id="entry_1139801517" class="form-email" dir="auto" aria-label="E-Mail Address" aria-required="true" required>
           </section>
           <section>
-            <textarea name="entry.723528064" rows="8" cols="50" placeholder="Your Message" id="entry_723528064" class="form-text" dir="auto" aria-label="Message"></textarea>
+            <input type="text" size="30" name="entry.314832544" placeholder="電話番号" id="entry_314832544" class="form-number" dir="auto" aria-label="Name" aria-required="true" required>
           </section>
           <section>
-            <input type="hidden" name="draftResponse" value="[,,&quot;5969303432463856438&quot;]">
+            <textarea name="entry.647649626" rows="8" cols="50" placeholder="本文" id="entry_647649626" class="form-text" dir="auto" aria-label="Message"></textarea>
+          </section>
+          <section>
+            <input type="hidden" name="draftResponse" value="[,,&quot;-738332242562249904&quot;]">
             <input type="hidden" name="pageHistory" value="0">
-            <input type="hidden" name="fbzx" value="5969303432463856438">
+            <input type="hidden" name="fbzx" value="-738332242562249904">
             <button type="submit" name="submit" id="ss-submit">Submit</button>
           </section>
         </form>
@@ -182,8 +193,10 @@
     </div>
   </section>
   {/block:IndexPage}
+<!--
   {block:TagPage}-->{/block:TagPage}
   {block:SearchPage}-->{/block:SearchPage}
+-->
 
   {block:PermalinkPage}
   <section id="" class="">
@@ -203,7 +216,7 @@
     {/block:Text}{/block:Posts}
   </section>
   {/block:TagPage}
-<article>
+</article>
 <footer role="contentinfo">
   <div class="footer-wrapper">
     <ul>
@@ -223,20 +236,22 @@ $(window).on('load',function(){
   ga = function(){
     ga.q.push(arguments);
   };
-  ga.q = [['create', 'UA-53010814-1', 'auto'], ['send', 'pageview']]
+  ga.q = [['create', 'UA-54537535-1', 'auto'], ['send', 'pageview']]
   ga.l = 1 * new Date();
 });
-</script>
+</script>  
 <script type="text/javascript"> // Smooth scrolling effect
 $(function() {
   $('.ancher-scroll').click(function(){
 //    if((window.location.href == {JSBlogURL}) || window.location.hash){
       var i = $(this).attr('href');
-    console.log('href:',i);    
       var j = $(i).offset().top;
-    console.log('offset:',j);
-      $('html,body').animate({scrollTop:j},'slow');
-      return false;
+      if ($(this).hasClass('panel-scroll')){
+        $('html,body').animate({scrollTop:j},'fast');
+      } else {
+        $('html,body').animate({scrollTop:j},'slow');
+      }
+    return false;
 //    }
   });
   $('.top-scroll').click(function(){
