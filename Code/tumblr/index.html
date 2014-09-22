@@ -42,10 +42,8 @@
 <!-- Main contetns -->
 <body>
 <article role="main" id="">
-<!--
-  {block:SearchPage}<!--{/block:SearchPage}
+  {block:SearchPage}<--{/block:SearchPage}
   {block:TagPage}<!--{/block:TagPage}
--->
   {block:IndexPage}
   <header role="banner" class="panel">
     <div class="contents-wrapper">
@@ -221,10 +219,8 @@
     </div>
   </section>
   {/block:IndexPage}
-<!--
   {block:TagPage}-->{/block:TagPage}
   {block:SearchPage}-->{/block:SearchPage}
--->
 
   {block:PermalinkPage}
   <section id="" class="">
@@ -238,10 +234,26 @@
   {block:TagPage}
   <section id="" class="{TagsAsClasses}">
     <h2>{Tag}</h2>
-    {block:Posts}{block:Text}
+    {block:Posts}
+    {block:Text}
     {block:Title}<h4>{Title}</h4>{/block:Title}
     {Body}
-    {/block:Text}{/block:Posts}
+    {/block:Text}
+
+    {block:Photo}
+    {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
+    {block:Caption}<p>{Caption}</p>{block:Caption}
+    {block:Date}<span>{Year}&nbsp;/&nbsp;{MonthNumber}&nbsp;/&nbsp;{DayOfMonthWithZero}</span>{/block:Date}
+    {/block:Photo}
+
+    {block:Pagination}
+    <footer class="pagination">
+      {block:PreviousPage}<a href="{PreviousPage}" class="page-linker page-previous" title="Previous">&lt;&lt;&nbsp;Previous</a>{/block:PreviousPage}
+      {block:NextPage}<a href="{NextPage}" class="page-linker page-next" title="Next">Next&nbsp;&gt;&gt;</a>{/block:NextPage}
+      <span class="page-count">{CurrentPage}&nbsp;/&nbsp;{TotalPages}</span>
+    </footer>
+    {/block:Pagination}
+    {/block:Posts}
   </section>
   {/block:TagPage}
 </article>
