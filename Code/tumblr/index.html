@@ -10,7 +10,7 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2014.09.19 / Ver 0.6
+  Last updated 2014.09.29 / Ver 0.7
 -->
 <html>
 <head>
@@ -41,123 +41,131 @@
 </head>
 <!-- Main contetns -->
 <body>
-<article role="main" id="">
+<article role="main">
   {block:SearchPage}<--{/block:SearchPage}
   {block:TagPage}<!--{/block:TagPage}
   {block:IndexPage}
-  <header role="banner" class="panel">
-    <div class="contents-wrapper">
-      <h1><a href="{BlogURL}" title=""></a></h1>
-      <section id="notice-wrapper">
-        <section class="notice">
-          <h3><a href="/tagged/お知らせ" title="最新のお知らせ">最新のお知らせ</a></h3>
-          <ul id="latest">
-            <li>2014/08/21 - お知らせ1</li>
-            <li>2014/08/20 - お知らせ2</li>
-          </ul>
-        </section>
-        <section class="notice">
-          <h3><a href="/tagged/お休み" title="お休みのお知らせ">お休みのお知らせ</a></h3>
-          <ul id="closings">
-            <li>2014/08/20 - お知らせ2</li>
-            <li>2014/08/19 - お知らせ3</li>
-          </ul>
-        </section>
+
+  <header role="banner" id="header-panel" class="panel mb130">
+    <div id="header-image"></div>
+    <nav role="navigation">
+      <a href="#cafe" class="ancher-scroll" title="カフェ">カフェ</a>
+      <a href="#glass" class="ancher-scroll" title="ガラス工房">ガラス工房</a>
+      <a href="#kidsroom" class="ancher-scroll" title="キッズルーム">キッズルーム</a>
+      <a href="#access" class="ancher-scroll" title="アクセス">アクセス</a>
+      <a href="#contact" id="" class="ancher-scroll" title="お問い合わせ">お問い合わせ</a>
+      <a href="/tagged/photos" title="写真">写真</a>
+      <a href="/links" title="リンク">リンク</a>
+    </nav>    
+    <h1><a href="{BlogURL}" title="Cafe & ガラス工房 海遊魚" id="header-logo"></a></h1>
+    <section id="notice-wrapper">
+      <section class="notice">
+        <h3><a href="/tagged/お知らせ" title="最新のお知らせ">最新のお知らせ</a></h3>
+        <ul id="latest">
+          <li>2014/08/21 - お知らせ1</li>
+          <li>2014/08/20 - お知らせ2</li>
+        </ul>
       </section>
-      <nav role="navigation">
-        <a href="#cafe" id="" class="ancher-scroll" title="">Cafe</a>
-        <a href="#kidsroom" id="" class="ancher-scroll" title="">Kids Room</a>
-        <a href="#atlier" id="" class="ancher-scroll" title="">Atlier</a>
-        <a href="#access" id="" class="ancher-scroll" title="">Access</a>
-        <a href="#contact" id="" class="ancher-scroll" title="">Contact</a>
-        <a href="/tagged/photos" id="" title="">Photos</a>
-        <a href="/links" id="" title="">Links</a>
-        <a href="/archives" id="" title="">Archive</a>
-      </nav>
-    </div>
+      <section class="notice">
+        <h3><a href="/tagged/お休み" title="お休みのお知らせ">お休みのお知らせ</a></h3>
+        <ul id="closings">
+          <li>2014/08/20 - お知らせ2</li>
+          <li>2014/08/19 - お知らせ3</li>
+        </ul>
+      </section>
+    </section>
   </header>
 
-  <section id="" class="panel">
-    <a id="index"></a>
-    <div class="contents-wrapper">
-      <h2 class="">Use background-image for logo</h2>
-      <p>Discription</p>
-      <h3>どんぐり公園</h3>
-      <p>「庭のどんぐり（マテバシイ）の木の下に、木製のシーソー、ブランコ、滑り台、鉄棒やハンモックがあります。やんちゃ盛りのちびっこも元気に遊べます。<br />よ～く見てみるといろんな虫や植物や鳥に出会えるよ！</p>
-      <a href="#cafe" class="ancher-scroll panel-scroll" title="">Next</a>
-    </div>
+  <section id="intro-panel" class="panel mb130">
+    <h2>開業の経緯</h2>
+    <p class="mb66"></p>
+    <section id="nav-image-wrapper">
+      <a href="#cafe" class="ancher-scroll nav-image-link nav-image-cf" title="カフェ">カフェ</a>
+      <div id="nav-image"></div>
+      <a href="#kidsroom" class="ancher-scroll nav-image-link nav-image-kr" title="キッズルーム">キッズルーム</a>
+      <a href="#glass" class="ancher-scroll nav-image-link nav-image-gs" title="ガラス工房">ガラス工房</a>
+      <a href="#park" class="ancher-scroll nav-image-link nav-image-pk" title="どんぐり公園">どんぐり公園</a>
+      <div id="swing-image"></div>
+    </section>
+    <p></p>
   </section>
 
-  <section id="" class="panel">
-    <a id="cafe"></a>
-    <div class="contents-wrapper">
-      <section id="" class="">
-        <h2 class="">Cafe</h2>
-        <p>入口の扉を開けると、左右に並べられた色とりどりのガラス作品がお客様をお出迎えします。カフェにあがるまでの空間はショップコーナーになっています。<br />玄関から一段あがると、フローリングのテーブル席（4席）、その奥には畳のお座敷席（４席と2席）があり、足をのばしてくつろげます。<br />赤ちゃん用に布団もありますので「ねんね」のお子様がいても安心してお越しいただけます。<br />天気が良い日は、テラス席もおすすめです。<br />目の前に広がる澄んだ海と木漏れ日の中で、ティータイムをお楽しみいただけます。（ペットも同伴できます）</p>
-      </section>
-      <section id="" class="">
-        <h2 class="">Recipe</h2>
-        <p></p>
-      </section>
-      <a href="#kidsroom" class="ancher-scroll panel-scroll" title="">Next</a>
-      <a href="#index" class="ancher-scroll" title="">Index</a>
-    </div>
+  <section id="cafe-panel" class="panel mb130">
+    <h2 id="cafe" class="panel-header-image mb50"></h2>
+    <section id="cafe-panel-left">
+      <div class="cafe-image-wide m2"></div>
+      <div class="cafe-image-wide m3"></div>
+      <h3>フード</h3>
+      <p></p>
+      <h3>デザート</h3>
+      <p></p>
+    </section>
+    <section id="cafe-panel-right">
+      <p></p>
+      <span class="cafe-image m4-1"></span>
+      <span class="cafe-image m4-2"></span>
+      <span class="cafe-image m4-3"></span>
+      <span class="cafe-image m4-4"></span>
+      <span class="cafe-image m4-5"></span>
+      <span class="cafe-image m4-6"></span>
+    </section>
+    <p></p>
   </section>
 
-  <section id="" class="panel">
-    <a id="kidsroom"></a>
-    <div class="contents-wrapper">
-      <h2 class="">Kids Room</h2>
-      <p>テラスの階段を上がると、２階にはキッズルーム。<br />木の温もりいっぱいの部屋は大人も子どもも楽しめます。<br />おもちゃもあるので小さいお子様は遊びに夢中です。<br />その間に、お父さん、お母さんはゆっくりとおくつろぎください。<br />キッズルームをご利用される場合、ご予約をお願いします。<br />ご注文は一階のカフェで承ります。<br />こちらの部屋は、半セルフサービルとなっております。<br />お帰りの際は、食器類を棚のトレーに、おもちゃは元の場所にお戻しください。</p>
-      <ul>
-        <li><img></li>
-        <li><img></li>
-        <li><img></li>
-        <li><img></li>
-      </ul>
-      <a href="#atlier" class="ancher-scroll panel-scroll" title="">Next</a>
-      <a href="#index" class="ancher-scroll" title="">Index</a>
-    </div>
+  <section id="kidsroom-panel" class="panel mb130">
+    <h2 id="kidsroom" class="kidsroom-header-image mb50"></h2>
+    <p></p>
+    <span class="kidsroom-image k1"></span>
+    <span class="kidsroom-image k2"></span>
+    <span class="kidsroom-image k3"></span>
+    <span class="kidsroom-image k4"></span>
   </section>
 
-  <section id="" class="panel">
-    <a id="atlier"></a>
-    <div class="contents-wrapper">
-      <h2 class="">Atlier</h2>
+  <section id="glass-panel" class="panel mb130">
+    <h2 id="glass" class="glass-header-image mb50"></h2>
+    <p class="mb50"></p>
+    <section id="glass-panel-left">
+      <h3>宙吹きガラス体験</h3>
+      <span class="glass-image-wide g1"></span>
       <p></p>
       <p></p>
-      <ul>
-        <li><img></li>
-        <li><img></li>
-        <li><img></li>
-        <li><img></li>
-      </ul>
-      <a href="#access" class="ancher-scroll panel-scroll" title="">Next</a>
-      <a href="#index" class="ancher-scroll" title="">Index</a>
-    </div>
+      <p></p>
+      <p></p>
+      <p></p>
+      <h3>サンドキャスト&nbsp;&mdash;お子様の&mdash;</h3>
+      <span class="glass-image-wide g2"></span>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </section>
+    <section id="glass-panel-right">
+      <span class="glass-image g3-1"></span>
+      <span class="glass-image g3-2"></span>
+      <span class="glass-image g3-3"></span>
+    </section>
+    <p class="mb50"></p>
+    <p class="float-l"><br /></p>
+    <p class="float-l"><br /><br /></p>
   </section>
-  
-  <section id="" class="panel">
-    <a id="access"></a>
-    <div class="contents-wrapper">
-      <h2 class="">Access</h2>
-      <p><iframe frameborder="0" height="450" src="https://www.google.com/maps/embed/v1/place?q=%E3%82%AB%E3%83%95%E3%82%A7%E6%B5%B7%E9%81%8A%E6%BC%81&amp;key=AIzaSyBdaPZkXieGi8w8Eaa9PcUl0b6BRFDOZKU&amp;language=ja" width="600" style="border: 0;"></iframe></p>
-      <h3>カフェ</h3>
-      <ul>
-        <li>11:00 ~ 夕暮れまで</li>
-        <li>金曜日は定休日、雨天時お休み</li>
-        <li>臨時休業、営業時間の変更はこちらをご覧ください。（「こちら」にお知らせへのリンク）</li>
-      </ul>
-      <h3>ガラス工房</h3>
-      <ul>
-        <li>9:00 ~ 夕暮れまで</li>
-        <li>金曜日、雨天時のみ営業</li>
-        <li>工房では宙吹きガラス、サンドキャスト、サンドブラストを体験していただけます。ご希望の方は5日前までにご連絡をお願いいたします。</li>
-        <li>※金曜日以外にご希望の場合は、2週間前までにご連絡ください。</li>
-      </ul>
-      <a href="#contact" class="ancher-scroll panel-scroll" title="">Next</a>
-      <a href="#index" class="ancher-scroll" title="">Index</a>
-    </div>
+
+  <section id="access-panel" class="panel">
+    <h2 id="access">アクセス</h2>
+    <iframe frameborder="0" width="376" height="192" src="https://www.google.com/maps/embed/v1/place?q=%E3%82%AB%E3%83%95%E3%82%A7%E6%B5%B7%E9%81%8A%E6%BC%81&amp;key=AIzaSyBdaPZkXieGi8w8Eaa9PcUl0b6BRFDOZKU&amp;language=ja" width="600" style="border: 0;"></iframe>
+    <div class="access-image"></div>
+    <h4>カフェ</h4>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <h4>ガラス工房</h4>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </section>
 
   <section id="" class="panel">
@@ -218,6 +226,7 @@
       </section>
     </div>
   </section>
+
   {/block:IndexPage}
   {block:TagPage}-->{/block:TagPage}
   {block:SearchPage}-->{/block:SearchPage}
@@ -256,16 +265,11 @@
     {/block:Posts}
   </section>
   {/block:TagPage}
+
+  <footer role="contentinfo">
+    <p>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a>&nbsp;/&nbsp;Design and coded by <a href="" title="" target="_blank">OUR*IRO</a></p>
+  </footer>
 </article>
-<footer role="contentinfo">
-  <div class="footer-wrapper">
-    <ul>
-      <li>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a></li>
-      <li>Design and coded by <a href="" title="" target="_blank">OUR*IRO</a></li>
-      <li><a href="#" title="" class="top-scroll">Top</a></li>
-    </ul>
-  </div>
-</footer>
 <!-- jQuery libs and scripts -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/Boxer-master/jquery.fs.boxer.min.js"></script>
