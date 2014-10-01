@@ -5,6 +5,32 @@
   box-sizing: border-box;
 }
 
+/* line 72, ../img/intro/*.png */
+.intro-sprite, .intro-icon1, .intro-icon2, .intro-icon3, .intro-icon4 {
+  background-image: url('/img/../img/intro-s6d363e3966.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.intro-icon1 {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.intro-icon2 {
+  background-position: 0 -124px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.intro-icon3 {
+  background-position: 0 -248px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.intro-icon4 {
+  background-position: 0 -372px;
+}
+
 /* line 6, ../sass/partials/_structure.scss */
 .panel {
   min-width: 100%;
@@ -90,6 +116,8 @@ h1 a {
   font-size: 13px;
   text-align: center;
 }
+
+/* line 67, ../sass/partials/_structure.scss */
 .panel-scroll {
   display: block;
   position: absolute;

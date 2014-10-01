@@ -1,0 +1,14 @@
+// Import
+
+@import "compass/utilities/sprites";
+@import "../img/intro/*.png";
+//@import "img/cafe/*.jpg";
+//@import "img/kidsroom/*.jpg";
+//@import "img/glass/*.jpg";
+
+// Include
+
+@include all-intro-sprites;
+//@include all-cafe-sprites;
+//@include all-kidsroom-sprites;
+//@include all-glass-sprites;
