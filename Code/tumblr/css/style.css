@@ -5,9 +5,46 @@
   box-sizing: border-box;
 }
 
+/* line 12, ../sass/partials/_base.scss */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, ../sass/partials/_base.scss */
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
 /* line 72, ../img/intro/*.png */
 .intro-sprite, .intro-icon1, .intro-icon2, .intro-icon3, .intro-icon4 {
   background-image: url('/img/../img/intro-s6d363e3966.png');
+  background-repeat: no-repeat;
+}
+
+/* line 56, ../img/cafe/interior/*.png */
+.interior-sprite, .interior-m2, .interior-m3 {
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/cafe/interior-s6e78aa8ca2.png');
+  background-repeat: no-repeat;
+}
+
+/* line 80, ../img/cafe/menu/*.png */
+.menu-sprite, .menu-m4-1, .menu-m4-2, .menu-m4-3, .menu-m4-4, .menu-m4-5 {
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/cafe/menu-see8e1ffbf6.png');
+  background-repeat: no-repeat;
+}
+
+/* line 72, ../img/kidsroom/*.png */
+.kidsroom-sprite, .kidsroom-k1, .kidsroom-k2, .kidsroom-k3, .kidsroom-k4 {
+  background-image: url('/img/../img/kidsroom-s1218d2debb.png');
+  background-repeat: no-repeat;
+}
+
+/* line 80, ../img/glass/*.png */
+.glass-sprite, .glass-g1, .glass-g2, .glass-g3-1, .glass-g3-2, .glass-g3-3 {
+  background-image: url('/img/../img/glass-s557cd94e46.png');
   background-repeat: no-repeat;
 }
 
@@ -31,75 +68,199 @@
   background-position: 0 -372px;
 }
 
-/* line 6, ../sass/partials/_structure.scss */
-.panel {
-  min-width: 100%;
-  position: relative;
-  border-bottom: solid 1px #ccc;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZhZmFmYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -moz-linear-gradient(#ffffff, #fafafa);
-  background-image: -webkit-linear-gradient(#ffffff, #fafafa);
-  background-image: linear-gradient(#ffffff, #fafafa);
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.interior-m2 {
+  background-position: 0 0;
 }
 
-/* line 13, ../sass/partials/_structure.scss */
-.contents-wrapper {
-  width: 1020px;
-  min-height: 760px;
-  position: relative;
-  margin: 0 auto;
-  padding: 21px 21px 21px 21px;
-  padding: 2.1rem 2.1rem 2.1rem 2.1rem;
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.interior-m3 {
+  background-position: 0 -178px;
 }
 
-/* line 21, ../sass/partials/_structure.scss */
-footer {
-  min-width: 100%;
-  position: relative;
-  padding: 21px 0px 21px 0px;
-  padding: 2.1rem 0rem 2.1rem 0rem;
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.menu-m4-1 {
+  background-position: 0 0;
 }
 
-/* line 27, ../sass/partials/_structure.scss */
-.footer-wrapper {
-  width: 1020px;
-  margin: 0 auto;
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.menu-m4-2 {
+  background-position: 0 -110px;
 }
 
-/* line 32, ../sass/partials/_structure.scss */
-h1 {
-  margin: 55px 0 21px;
-  text-align: center;
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.menu-m4-3 {
+  background-position: 0 -220px;
 }
-/* line 35, ../sass/partials/_structure.scss */
-h1 a {
-  width: 128px;
-  height: 128px;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/kaiyu-gyo_logo-2_small.png") no-repeat;
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.menu-m4-4 {
+  background-position: 0 -330px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.menu-m4-5 {
+  background-position: 0 -440px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.kidsroom-k1 {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.kidsroom-k2 {
+  background-position: 0 -106px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.kidsroom-k3 {
+  background-position: 0 -212px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.kidsroom-k4 {
+  background-position: 0 -318px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.glass-g1 {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.glass-g2 {
+  background-position: 0 -100px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.glass-g3-1 {
+  background-position: 0 -200px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.glass-g3-2 {
+  background-position: 0 -322px;
+}
+
+/* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/sprites/_base.scss */
+.glass-g3-3 {
+  background-position: 0 -444px;
+}
+
+/* line 20, ../sass/partials/_sprites.scss */
+.interior-sprite, .interior-m2, .interior-m3, .menu-sprite, .menu-m4-1, .menu-m4-2, .menu-m4-3, .menu-m4-4, .menu-m4-5 {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
-  -moz-background-size: 128px;
-  -o-background-size: 128px;
-  -webkit-background-size: 128px;
-  background-size: 128px;
 }
 
-/* line 44, ../sass/partials/_structure.scss */
+/* line 24, ../sass/partials/_sprites.scss */
+.interior-sprite, .interior-m2, .interior-m3 {
+  width: 236px;
+  height: 178px;
+}
+
+/* line 30, ../sass/partials/_sprites.scss */
+.menu-sprite, .menu-m4-1, .menu-m4-2, .menu-m4-3, .menu-m4-4, .menu-m4-5 {
+  width: 122px;
+  height: 110px;
+}
+
+/* line 3, ../sass/partials/_structure.scss */
+article {
+  display: block;
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* line 10, ../sass/partials/_structure.scss */
+#header-image {
+  display: block;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* line 16, ../sass/partials/_structure.scss */
+.panel {
+  position: relative;
+  width: 100%;
+  padding: 0 73px;
+}
+
+/* line 22, ../sass/partials/_structure.scss */
+.mb130 {
+  margin-bottom: 130px;
+}
+
+/* line 26, ../sass/partials/_structure.scss */
+.mb66 {
+  margin-bottom: 66px;
+}
+
+/* line 30, ../sass/partials/_structure.scss */
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* line 36, ../sass/partials/_structure.scss */
+#header-panel {
+  text-align: center;
+}
+
+/* line 40, ../sass/partials/_structure.scss */
+nav {
+  margin: 13px 0px 13px 0px;
+  margin: 1.3rem 0rem 1.3rem 0rem;
+}
+/* line 42, ../sass/partials/_structure.scss */
+nav a {
+  margin: 0px 13px 0px 0px;
+  margin: 0rem 1.3rem 0rem 0rem;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 45, ../sass/partials/_structure.scss */
+nav a:last-child {
+  margin: 0;
+}
+
+/* line 51, ../sass/partials/_structure.scss */
+h1 {
+  width: 110px;
+  height: 110px;
+  color: transparent;
+}
+/* line 55, ../sass/partials/_structure.scss */
+h1 a {
+  width: 100%;
+  height: 100%;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/logo.jpg") no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-background-size: 110px;
+  -o-background-size: 110px;
+  -webkit-background-size: 110px;
+  background-size: 110px;
+}
+
+/* line 64, ../sass/partials/_structure.scss */
 #notice-wrapper {
   display: block;
-  width: 30%;
   position: relative;
   margin: 0 auto;
-  background: white;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
 }
 
-/* line 53, ../sass/partials/_structure.scss */
+/* line 70, ../sass/partials/_structure.scss */
 .notice {
   width: 100%;
   height: 50%;
@@ -107,22 +268,32 @@ h1 a {
   padding: 0px 21px 0px 21px;
   padding: 0rem 2.1rem 0rem 2.1rem;
 }
-/* line 58, ../sass/partials/_structure.scss */
+/* line 75, ../sass/partials/_structure.scss */
 .notice:first-child {
   border-bottom: solid 1px #ccc;
 }
-/* line 61, ../sass/partials/_structure.scss */
+/* line 78, ../sass/partials/_structure.scss */
 .notice h3, .notice ul {
   font-size: 13px;
   text-align: center;
 }
 
-/* line 67, ../sass/partials/_structure.scss */
-.panel-scroll {
-  display: block;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+/* line 86, ../sass/partials/_structure.scss */
+#intro-panel {
+  text-align: center;
+}
+
+/* line 90, ../sass/partials/_structure.scss */
+#nav-image-wrapper {
+  text-align: left;
+}
+
+/* line 96, ../sass/partials/_structure.scss */
+footer {
+  width: 100%;
+  height: 50px;
+  padding: 0 73px;
+  vertical-align: middle;
 }
 
 /* line 3, ../sass/partials/_typography.scss */

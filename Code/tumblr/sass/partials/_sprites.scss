@@ -2,13 +2,33 @@
 
 @import "compass/utilities/sprites";
 @import "../img/intro/*.png";
-//@import "img/cafe/*.jpg";
-//@import "img/kidsroom/*.jpg";
-//@import "img/glass/*.jpg";
+@import "../img/cafe/interior/*.png";
+@import "../img/cafe/menu/*.png";
+@import "../img/kidsroom/*.png";
+@import "../img/glass/*.png";
 
 // Include
 
 @include all-intro-sprites;
-//@include all-cafe-sprites;
-//@include all-kidsroom-sprites;
-//@include all-glass-sprites;
+@include all-interior-sprites;
+@include all-menu-sprites;
+@include all-kidsroom-sprites;
+@include all-glass-sprites;
+
+// Individual sprite styles
+
+%sprite {
+  @include inline-block;
+}
+
+.interior-sprite {
+  @extend %sprite;
+  width: 236px;
+  height: 178px;
+}
+
+.menu-sprite {
+  @extend %sprite;
+  width: 122px;
+  height: 110px;
+}

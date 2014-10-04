@@ -42,12 +42,8 @@
 <!-- Main contetns -->
 <body>
 <article role="main">
-  {block:SearchPage}<--{/block:SearchPage}
-  {block:TagPage}<!--{/block:TagPage}
-  {block:IndexPage}
-
+  <img src="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/header.jpg" alt="" id="header-image" />
   <header role="banner" id="header-panel" class="panel mb130">
-    <img src="img/header/header.jpg" alt="" id="header-image" />
     <nav role="navigation">
       <a href="#cafe" class="ancher-scroll" title="カフェ">カフェ</a>
       <a href="#glass" class="ancher-scroll" title="ガラス工房">ガラス工房</a>
@@ -56,8 +52,8 @@
       <a href="#contact" id="" class="ancher-scroll" title="お問い合わせ">お問い合わせ</a>
       <a href="/tagged/photos" title="写真">写真</a>
       <a href="/links" title="リンク">リンク</a>
-    </nav>    
-    <h1><a href="{BlogURL}" title="Cafe & ガラス工房 海遊魚" id="header-logo"></a></h1>
+    </nav>
+    <h1><a href="{BlogURL}" title="Cafe & ガラス工房 海遊魚" id="header-logo"></a>{BlogTitle}</h1>
     <section id="notice-wrapper">
       <section class="notice">
         <h3><a href="/tagged/お知らせ" title="最新のお知らせ">最新のお知らせ</a></h3>
@@ -76,6 +72,10 @@
     </section>
   </header>
 
+  {block:SearchPage}<--{/block:SearchPage}
+  {block:TagPage}<!--{/block:TagPage}
+  {block:IndexPage}
+
   <section id="intro-panel" class="panel mb130">
     <h2>開業の経緯</h2>
     <p class="mb66">海とモノづくりとガウディが大好きな店主が、<br />高校3年生の時に「いつか海の見える所でガラスと料理をして暮らしたい☆」と願い、<br />岡山県倉敷の芸術大学に進学、ガラス制作を専攻。<br />その後、東京へ戻りエコール辻フランス・イタリア料理専門カレッジで料理について学ぶ。<br />卒業後は調理の仕事の合間にレンタルスタジオにて宙吹きガラスを制作する日々を送る。<br />そんな時たまたま目にした雑誌「自休自足」で、この場所に出会い一目惚れ。<br /><br />元々建っていた古民家を、自らタイル張り、ペンキ塗り、左官などをしリフォーム。<br />2008年7月20日  海の日  に「Cafe海遊魚」をひっそりとオープン。<br /><br />2年後、ガウディ風の母屋とカフェ入口＆ショップを大工さんや仲間と共に増築。<br />オープンから6年&hellip; 念願のガラス工房が完成!!<br />晴れて「Cafe&amp;ガラス工房  海遊魚」になりました。</p>
@@ -85,18 +85,18 @@
       <a href="#kidsroom" class="ancher-scroll nav-image-link nav-image-kr" title="キッズルーム">キッズルーム</a>
       <a href="#glass" class="ancher-scroll nav-image-link nav-image-gs" title="ガラス工房">ガラス工房</a>
       <a href="#park" class="ancher-scroll nav-image-link nav-image-pk" title="どんぐり公園">どんぐり公園</a>
-      <div id="swing-image"></div>
+      <span id="swing-image"></span>
+      <p>「庭のどんぐり（マテバシイ）の木の下に、<br />木製のシーソー、ブランコ、滑り台、鉄棒やハンモックがあります。<br />やんちゃ盛りのちびっこも元気に遊べます。<br />よ～く見てみるといろんな虫や植物や鳥に出会えるよ！</p>
     </section>
-    <p>「庭のどんぐり（マテバシイ）の木の下に、<br />木製のシーソー、ブランコ、滑り台、鉄棒やハンモックがあります。<br />やんちゃ盛りのちびっこも元気に遊べます。<br />よ～く見てみるといろんな虫や植物や鳥に出会えるよ！</p>
   </section>
 
   <section id="cafe-panel" class="panel mb130">
     <h2 id="cafe" class="panel-header-image mb50"></h2>
     <section id="cafe-panel-1 mb50">
       <section id="cafe-image-wide-wrapper">
-        <div class="cafe-image-wide m2"></div>
-        <div class="cafe-image-wide m3"></div>
-        <p>房総の旬の魚や野菜、果物を使った‘心と体にやさしい料理を提供しています。<br />また冷たいドリンクやかき氷などは自作のガラス器でお出ししています。</p>
+        <span class="interior-sprite interior-m2"></span>
+        <span class="interior-sprite interior-m3"></span>
+        <p>房総の旬の魚や野菜、果物を使った&nbsp;&ldquo;心と体にやさしい料理&rdquo;&nbsp;を提供しています。<br />また冷たいドリンクやかき氷などは自作のガラス器でお出ししています。</p>
       </section>
       <p>入口の扉を開けると、<br />左右に並べられた色とりどりのガラス作品がお客様をお出迎えします。<br />カフェにあがるまでの空間はショップコーナーになっています。<br />玄関から一段あがると、<br />フローリングのテーブル席（4席）、<br />その奥には畳のお座敷席（4席と2席）があり、<br />足をのばしてくつろげます。<br />赤ちゃん用に布団もありますので<br />「ねんね」のお子様がいても安心してお越しいただけます。<br />天気が良い日は、テラス席もおすすめです。<br />目の前に広がる澄んだ海と木漏れ日の中で、<br />ティータイムをお楽しみいただけます。（ペットも同伴できます）</p>
     </section>
@@ -109,12 +109,11 @@
         <p>※ワッフルは素材の米粉を自然栽培のものに変えるので、2014年11月より100円値上げいたします。<br />その代わりに、ソフトドリンクは全品50円引きさせていただきます。</p>
       </section>
       <section id="cafe-image-wrapper">
-        <span class="cafe-image m4-1"></span>
-        <span class="cafe-image m4-2"></span>
-        <span class="cafe-image m4-3"></span>
-        <span class="cafe-image m4-4"></span>
-        <span class="cafe-image m4-5"></span>
-        <span class="cafe-image m4-6"></span>
+        <span class="menu-sprite menu-m4-1"></span>
+        <span class="menu-sprite menu-m4-2"></span>
+        <span class="menu-sprite menu-m4-3"></span>
+        <span class="menu-sprite menu-m4-4"></span>
+        <span class="menu-sprite menu-m4-5"></span>
       </section>
       <a href="/" title="最新のメニュー" class="mb50">最新のメニューはこちらから</a>
     </section>

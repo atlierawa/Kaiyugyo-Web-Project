@@ -1,53 +1,70 @@
 // Structure partial
 
 article {
+  display: block;
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#header-image {
+  display: block;
+  width: 1024px;
+  margin: 0 auto;
 }
 
 .panel {
-  min-width: 100%;
   position: relative;
-  border-bottom: solid 1px #ccc;
-  @include background-image(linear-gradient(white,#fafafa));
+  width: 100%;
+  padding: 0 73px;
 }
 
-.contents-wrapper {
-  width: 1020px;
-  min-height: 760px;
-  position: relative;
-  margin: 0 auto;
-  @include padding(2.1);
+.mb130 {
+  margin-bottom: 130px;
 }
 
-footer {
-  min-width: 100%;
-  position: relative;
-  @include padding(2.1,0);  
+.mb66 {
+  margin-bottom: 66px;
 }
 
-.footer-wrapper {
-  width: 1020px;
-  margin: 0 auto;
+.mb50 {
+  margin-bottom: 50px;
+}
+
+// header-panel
+
+#header-panel {
+  text-align: center;
+}
+
+nav {
+  @include margin(1.3,0);
+  a {
+    @include margin(0,1.3,0,0);
+    @include inline-block;
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
 
 h1 {
-  margin: 55px 0 21px;
-  text-align: center;
+  width: 110px;
+  height: 110px;
+  color: transparent;
   a {
-    width: 128px;
-    height: 128px;
-    background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/kaiyu-gyo_logo-2_small.png") no-repeat;
+    width: 100%;
+    height: 100%;
+    background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/logo.jpg") no-repeat;
     @include inline-block;
-    @include background-size(128px);
+    @include background-size(110px);
   }
 }
 
 #notice-wrapper {
   display: block;
-  width: 30%;
   position: relative;
   margin: 0 auto;
-  background: white;
-  @include opacity(0.9);
 }
 
 .notice {
@@ -64,9 +81,21 @@ h1 {
   }
 }
 
-.panel-scroll {
-  display: block;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+// intro-panel
+
+#intro-panel {
+  text-align: center;
+}
+
+#nav-image-wrapper {
+  text-align: left;
+}
+
+// footer
+
+footer {
+  width: 100%;
+  height: 50px;
+  padding: 0 73px;
+  vertical-align: middle;  
 }
