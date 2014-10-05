@@ -2,20 +2,3 @@
 
 @import "compass";
 @import "modules/all";
-
-// Base CSS
-
-*, *:before, *:after {
-  @include box-sizing(border-box);
-}
-
-html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}

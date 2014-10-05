@@ -1,10 +1,27 @@
 // Structure partial
 
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+
 article {
   display: block;
   position: relative;
   width: 1024px;
   margin: 0 auto;
+  background: white;
 }
 
 #header-image {
@@ -88,7 +105,48 @@ h1 {
 }
 
 #nav-image-wrapper {
-  text-align: left;
+  position: relative;
+  height: 652px;
+}
+
+%nav-image {
+  position: absolute;
+}
+
+#nav-image-base {
+  @extend %nav-image;
+  top: 0px;
+  left: 180px;
+}
+
+.nav-image-link {
+  @extend %nav-image;
+  width: 124px;
+  height: 124px;
+  text-align: center;
+  line-height: 124px;
+  border: solid 1px black;
+  @include border-radius(50%);
+}
+
+.nav-image-cf {
+  top: 0;
+  left: 56px;
+}
+
+.nav-image-kr {
+  top: 0;
+  left: 698px;
+}
+
+.nav-image-gs {
+  top: 138px;
+  left: 698px;
+}
+
+.nav-image-pk {
+  top: 349px;
+  left: 56px;
 }
 
 // footer
@@ -97,5 +155,6 @@ footer {
   width: 100%;
   height: 50px;
   padding: 0 73px;
-  vertical-align: middle;  
+  vertical-align: middle;
+  border-top: solid 1px grey;
 }

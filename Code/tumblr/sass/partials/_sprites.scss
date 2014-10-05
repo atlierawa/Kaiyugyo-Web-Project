@@ -1,19 +1,22 @@
 // Import
 
 @import "compass/utilities/sprites";
-@import "../img/intro/*.png";
-@import "../img/cafe/interior/*.png";
-@import "../img/cafe/menu/*.png";
+@import "../img/banner/*.png";
+@import "../img/cafe_interior/*.png";
+@import "../img/cafe_menu/*.png";
 @import "../img/kidsroom/*.png";
-@import "../img/glass/*.png";
+@import "../img/glass_banner/*.png";
+@import "../img/glass_work/*.png";
 
 // Include
 
-@include all-intro-sprites;
-@include all-interior-sprites;
-@include all-menu-sprites;
+//@include all-intro-sprites;
+@include all-banner-sprites;
+@include all-cafe_interior-sprites;
+@include all-cafe_menu-sprites;
 @include all-kidsroom-sprites;
-@include all-glass-sprites;
+@include all-glass_banner-sprites;
+@include all-glass_work-sprites;
 
 // Individual sprite styles
 
@@ -21,14 +24,38 @@
   @include inline-block;
 }
 
-.interior-sprite {
+.banner-sprite {
+  @extend %sprite;
+  width: 878px;
+  height: 210px;
+}
+
+.cafe_interior-sprite {
   @extend %sprite;
   width: 236px;
   height: 178px;
 }
 
-.menu-sprite {
+.cafe_menu-sprite {
   @extend %sprite;
   width: 122px;
   height: 110px;
+}
+
+.kidsroom-sprite {
+  @extend %sprite;
+  width: 118px;
+  height: 106px;
+}
+
+.glass_banner-sprite {
+  @extend %sprite;
+  width: 548px;
+  height: 100px;
+}
+
+.glass_work-sprite {
+  @extend %sprite;
+  width: 122px;
+  height: 122px;
 }
