@@ -43,7 +43,7 @@
 <body>
 <article role="main">
   <img src="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/header.jpg" alt="" id="header-image" />
-  <header role="banner" id="header-panel" class="panel mb130">
+  <header role="banner" id="header-panel" class="panel">
     <nav role="navigation">
       <a href="#cafe" class="ancher-scroll" title="カフェ">カフェ</a>
       <a href="#glass" class="ancher-scroll" title="ガラス工房">ガラス工房</a>
@@ -54,23 +54,6 @@
       <a href="" title="ブログ">リンク</a>
       <a href="http://ainoaino.exblog.jp" title="リンク" target="_blank">ブログ</a>
     </nav>
-    <h1><a href="{BlogURL}" title="Cafe & ガラス工房 海遊魚" id="header-logo"></a>{BlogTitle}</h1>
-    <section id="notice-wrapper">
-      <section class="notice">
-        <h3><a href="{BlogURL}tagged/お知らせ" title="最新のお知らせ">最新のお知らせ</a></h3>
-        <ul id="latest">
-          <li>2014/08/21 - お知らせ1</li>
-          <li>2014/08/20 - お知らせ2</li>
-        </ul>
-      </section>
-      <section class="notice">
-        <h3><a href="{BlogURL}tagged/お休み" title="お休みのお知らせ">お休みのお知らせ</a></h3>
-        <ul id="closings">
-          <li>2014/08/20 - お知らせ2</li>
-          <li>2014/08/19 - お知らせ3</li>
-        </ul>
-      </section>
-    </section>
   </header>
 
   {block:SearchPage}<--{/block:SearchPage}
@@ -78,6 +61,24 @@
   {block:IndexPage}
 
   <section id="intro-panel" class="panel mb130">
+    <section id="intro-header" class="mb130">
+      <div id="intro-header-left">
+        <h1><a href="{BlogURL}" title="Cafe & ガラス工房 海遊魚" id="header-logo"></a>{BlogTitle}</h1>
+        <span>かいゆうぎょ</span>
+      </div>
+      <div id="intro-header-right">
+        <h3><a href="{BlogURL}tagged/お知らせ" title="最新のお知らせ">最新のお知らせ</a></h3>
+        <ul class="ls-c">
+          <li>2014/08/21 - お知らせ1</li>
+          <li>2014/08/20 - お知らせ2</li>
+        </ul>
+        <h3><a href="{BlogURL}tagged/お休み" title="お休みのお知らせ">お休みのお知らせ</a></h3>
+        <ul class="ls-c">
+          <li>2014/08/20 - お知らせ2</li>
+          <li>2014/08/19 - お知らせ3</li>
+        </ul>
+      </div>
+    </section>
     <h2>開業の経緯</h2>
     <p class="mb66">海とモノづくりとガウディが大好きな店主が、<br />高校3年生の時に「いつか海の見える所でガラスと料理をして暮らしたい☆」と願い、<br />岡山県倉敷の芸術大学に進学、ガラス制作を専攻。<br />その後、東京へ戻りエコール辻フランス・イタリア料理専門カレッジで料理について学ぶ。<br />卒業後は調理の仕事の合間にレンタルスタジオにて宙吹きガラスを制作する日々を送る。<br />そんな時たまたま目にした雑誌「自休自足」で、この場所に出会い一目惚れ。<br /><br />元々建っていた古民家を、自らタイル張り、ペンキ塗り、左官などをしリフォーム。<br />2008年7月20日  海の日  に「Cafe海遊魚」をひっそりとオープン。<br /><br />2年後、ガウディ風の母屋とカフェ入口＆ショップを大工さんや仲間と共に増築。<br />オープンから6年&hellip; 念願のガラス工房が完成!!<br />晴れて「Cafe&amp;ガラス工房  海遊魚」になりました。</p>
     <section id="nav-image-wrapper">
@@ -93,32 +94,36 @@
 
   <section id="cafe-panel" class="panel mb130">
     <h2 id="cafe" class="banner-sprite banner-m0 mb50"></h2>
-    <section id="cafe-panel-1 mb50">
-      <section id="cafe-image-wide-wrapper">
+    <section class="cf mb50">
+      <div class="cafe-panel-left">
         <span class="cafe_interior-sprite cafe_interior-m2"></span>
         <span class="cafe_interior-sprite cafe_interior-m3"></span>
         <p>房総の旬の魚や野菜、果物を使った&nbsp;&ldquo;心と体にやさしい料理&rdquo;&nbsp;を提供しています。<br />また冷たいドリンクやかき氷などは自作のガラス器でお出ししています。</p>
-      </section>
-      <p>入口の扉を開けると、<br />左右に並べられた色とりどりのガラス作品がお客様をお出迎えします。<br />カフェにあがるまでの空間はショップコーナーになっています。<br />玄関から一段あがると、<br />フローリングのテーブル席（4席）、<br />その奥には畳のお座敷席（4席と2席）があり、<br />足をのばしてくつろげます。<br />赤ちゃん用に布団もありますので<br />「ねんね」のお子様がいても安心してお越しいただけます。<br />天気が良い日は、テラス席もおすすめです。<br />目の前に広がる澄んだ海と木漏れ日の中で、<br />ティータイムをお楽しみいただけます。（ペットも同伴できます）</p>
+      </div>
+      <div class="cafe-panel-right">
+        <p>入口の扉を開けると、<br />左右に並べられた色とりどりのガラス作品がお客様をお出迎えします。<br />カフェにあがるまでの空間はショップコーナーになっています。<br />玄関から一段あがると、<br />フローリングのテーブル席（4席）、<br />その奥には畳のお座敷席（4席と2席）があり、<br />足をのばしてくつろげます。<br />赤ちゃん用に布団もありますので<br />「ねんね」のお子様がいても安心してお越しいただけます。<br />天気が良い日は、テラス席もおすすめです。<br />目の前に広がる澄んだ海と木漏れ日の中で、<br />ティータイムをお楽しみいただけます。（ペットも同伴できます）</p>
+      </div>
     </section>
-    <section id="cafe-panel-2 mb50">
-      <section id="cafe-food-wrapper">
+    <section class="cf mb50">
+      <div class="cafe-panel-left">
         <h3>フード</h3>
         <p>「季節により、その時季の食材で替わるランチは３種類」&nbsp;&nbsp;&nbsp;900円<br />パスタ＆スープ、カレー、リゾット＆スープ、角煮丼、自家製オイルサーディン丼など。<br />詳しくは「お知らせ」をご覧ください。</p>
         <h3>デザート</h3>
         <p>本日のスイーツ&nbsp;&nbsp;&nbsp;450円<br />米粉シフォンケーキ＆自家製ジャム&nbsp;&nbsp;&nbsp;450円<br />米粉入り焼き立てワッフル&nbsp;&nbsp;&nbsp;700円</p>
         <p>※ワッフルは素材の米粉を自然栽培のものに変えるので、2014年11月より100円値上げいたします。<br />その代わりに、ソフトドリンクは全品50円引きさせていただきます。</p>
-      </section>
-      <section id="cafe-image-wrapper">
-        <span class="cafe_menu-sprite cafe_menu-m4-1"></span>
-        <span class="cafe_menu-sprite cafe_menu-m4-2"></span>
-        <span class="cafe_menu-sprite cafe_menu-m4-3"></span>
-        <span class="cafe_menu-sprite cafe_menu-m4-4"></span>
-        <span class="cafe_menu-sprite cafe_menu-m4-5"></span>
-      </section>
-      <a href="{BlogURL}tagged/メニュー" title="最新のメニュー" class="mb50">最新のメニューはこちらから</a>
+        <p>醤油、味噌、アンチョビー、ジャム、シロップ類、酵母パン（寒い時季のみ）など、さまざまなモノを手づくりしております。<br />水は日本の名水百選「銘水 滝の不動尊」（富津市田原）の美味しい湧き水を使用。<br />ベーキングパウダーはアルミフリーのものを使用。<br />ワッフルやシフォンケーキ、米粉ロールケーキには<br />房総の「自然栽培（耕さない田んぼ）」の米粉を使用。<br />食材は出来るだけ地元の物を使うよう心がけております。</p>
+      </div>
+      <div class="cafe-panel-right">
+        <ol id="cafe-panel-image" class="ls-n">
+          <li class="cafe_menu-sprite cafe_menu-m4-1"></li>
+          <li class="cafe_menu-sprite cafe_menu-m4-2"></li>
+          <li class="cafe_menu-sprite cafe_menu-m4-3"></li>
+          <li class="cafe_menu-sprite cafe_menu-m4-4"></li>
+          <li class="cafe_menu-sprite cafe_menu-m4-5"></li>
+          <li><a href="{BlogURL}tagged/メニュー" title="最新のメニュー">最新のメニューはこちらから</a></li>
+        </ol>
+      </div>
     </section>
-    <p></p>
   </section>
 
   <section id="kidsroom-panel" class="panel mb130">
@@ -259,7 +264,7 @@
   {block:SearchPage}-->{/block:SearchPage}
 
   {block:PermalinkPage}
-  <section id="" class="">
+  <section id="" class="mb130">
     {block:Posts}{block:Text}
     {block:Title}<h2>{Title}</h2>{/block:Title}
     {Body}
@@ -268,18 +273,22 @@
   {/block:PermalinkPage}
 
   {block:TagPage}
-  <section id="" class="{TagsAsClasses}">
+  <section id="" class="{TagsAsClasses} mb130">
     <h2>{Tag}</h2>
     {block:Posts}
     {block:Text}
+    <section id="" class="mb50">
     {block:Title}<h4>{Title}</h4>{/block:Title}
     {Body}
+    </section>
     {/block:Text}
 
     {block:Photo}
+    <section id="" class="mb50">
     {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
     {block:Caption}<p>{Caption}</p>{block:Caption}
     {block:Date}<span>{Year}&nbsp;/&nbsp;{MonthNumber}&nbsp;/&nbsp;{DayOfMonthWithZero}</span>{/block:Date}
+    </section>
     {/block:Photo}
 
     {block:Pagination}

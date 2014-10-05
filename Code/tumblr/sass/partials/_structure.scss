@@ -16,6 +16,30 @@ body {
   background: #fafafa;
 }
 
+.mb130 {
+  margin-bottom: 130px;
+}
+
+.mb66 {
+  margin-bottom: 66px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.ls-c {
+  list-style: circle;
+}
+
+.ls-n {
+  list-style: none;
+}
+
+.cf {
+  @include clearfix;
+}
+
 article {
   display: block;
   position: relative;
@@ -36,19 +60,7 @@ article {
   padding: 0 73px;
 }
 
-.mb130 {
-  margin-bottom: 130px;
-}
-
-.mb66 {
-  margin-bottom: 66px;
-}
-
-.mb50 {
-  margin-bottom: 50px;
-}
-
-// header-panel
+// Header panel
 
 #header-panel {
   text-align: center;
@@ -65,43 +77,27 @@ nav {
   }
 }
 
+// Intro panel
+
+#intro-panel {
+  text-align: center;
+}
+
+#intro-header-left, #intro-header-right {
+  @include inline-block;
+}
+
 h1 {
   width: 110px;
   height: 110px;
   color: transparent;
   a {
+    display: block;
     width: 100%;
     height: 100%;
     background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/logo.jpg") no-repeat;
-    @include inline-block;
     @include background-size(110px);
   }
-}
-
-#notice-wrapper {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-}
-
-.notice {
-  width: 100%;
-  height: 50%;
-  border: solid 1px white;
-  @include padding(0,2.1);
-  &:first-child {
-    border-bottom: solid 1px #ccc;
-  }
-  h3, ul {
-    font-size: 13px;
-    text-align: center;
-  }
-}
-
-// intro-panel
-
-#intro-panel {
-  text-align: center;
 }
 
 #nav-image-wrapper {
@@ -149,7 +145,39 @@ h1 {
   left: 56px;
 }
 
-// footer
+// Cafe panel
+
+.cafe-panel-left {
+  float: left;
+  width: 478px;
+}
+
+.cafe-panel-right {
+  float: right;
+  width: 378px;
+}
+
+#cafe-panel-image {
+  margin: 0;
+  padding: 0;
+  li {
+    &:last-child {
+      width: 122px;
+      height: 110px;
+      border: solid 1px grey;
+      list-style: none;
+      @include inline-block;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+  }
+}
+
+// Footer
 
 footer {
   width: 100%;
