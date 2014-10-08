@@ -16,6 +16,10 @@ body {
   background: #fafafa;
 }
 
+.mt0 {
+  margin-top: 0;
+}
+
 .mb130 {
   margin-bottom: 130px;
 }
@@ -28,7 +32,11 @@ body {
   margin-bottom: 50px;
 }
 
-.pl-0 {
+.mr20 {
+  margin-right: 20px;
+}
+
+.pl0 {
   padding-left: 0;
 }
 
@@ -169,7 +177,7 @@ h1 {
 }
 
 .cafe-panel-right {
-  float: right;
+  float: left;
   width: 378px;
 }
 
@@ -193,15 +201,24 @@ h1 {
   }
 }
 
+// Kidsroom panel
+
 .kidsroom-panel-left {
   float: left;
   width: 366px;
 }
 
 .kidsroom-panel-right {
-  float: right;
+  float: left;
   width: 490px;
 }
+
+#kidsroom-panel-image {
+  margin: 0;
+  padding: 0;
+}
+
+// Glass panel
 
 .glass-panel-left {
   float: left;
@@ -209,7 +226,7 @@ h1 {
 }
 
 .glass-panel-right {
-  float: right;
+  float: left;
   width: 376px;
 }
 
@@ -235,6 +252,7 @@ h1 {
 
 #google-map {
   float: left;
+  margin-right: 102px;
 }
 
 #image-map {
