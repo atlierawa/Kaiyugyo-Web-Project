@@ -28,6 +28,10 @@ body {
   margin-bottom: 50px;
 }
 
+.pl-0 {
+  padding-left: 0;
+}
+
 .ls-c {
   list-style: circle;
 }
@@ -36,8 +40,24 @@ body {
   list-style: none;
 }
 
+.ls-rice {
+  list-style: none;
+  &:before {
+    content: "※";
+    position: absolute;
+    text-indent: -1.4em;
+    line-height: 1.6em;
+  }  
+}
+
 .cf {
   @include clearfix;
+}
+
+#header-image {
+  display: block;
+  width: 1024px;
+  margin: 0 auto;
 }
 
 article {
@@ -46,12 +66,8 @@ article {
   width: 1024px;
   margin: 0 auto;
   background: white;
-}
-
-#header-image {
-  display: block;
-  width: 1024px;
-  margin: 0 auto;
+  border-left: dashed 1px #ddd;
+  border-right: dashed 1px #ddd;
 }
 
 .panel {
@@ -67,9 +83,10 @@ article {
 }
 
 nav {
-  @include margin(1.3,0);
+  margin: 0 0 13px;
+  padding-top: 13px;
   a {
-    @include margin(0,1.3,0,0);
+    margin-right: 13px;
     @include inline-block;
     &:last-child {
       margin: 0;
@@ -83,14 +100,13 @@ nav {
   text-align: center;
 }
 
-#intro-header-left, #intro-header-right {
+.intro-header-contents {
   @include inline-block;
 }
 
 h1 {
   width: 110px;
   height: 110px;
-  color: transparent;
   a {
     display: block;
     width: 100%;
@@ -177,6 +193,55 @@ h1 {
   }
 }
 
+.kidsroom-panel-left {
+  float: left;
+  width: 366px;
+}
+
+.kidsroom-panel-right {
+  float: right;
+  width: 490px;
+}
+
+.glass-panel-left {
+  float: left;
+  width: 480px;
+}
+
+.glass-panel-right {
+  float: right;
+  width: 376px;
+}
+
+#glass-panel-image {
+  margin: 0;
+  padding: 0;
+  li {
+    &:last-child {
+      width: 122px;
+      height: 122px;
+      border: solid 1px grey;
+      list-style: none;
+      @include inline-block;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+  }
+}
+
+#google-map {
+  float: left;
+}
+
+#image-map {
+  width: 376px;
+  height: 192px;
+}
+
 // Footer
 
 footer {
@@ -184,5 +249,5 @@ footer {
   height: 50px;
   padding: 0 73px;
   vertical-align: middle;
-  border-top: solid 1px grey;
+  border-top: dashed 1px #ddd;
 }

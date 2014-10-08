@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 64, ../img/banner/*.png */
 .banner-sprite, .banner-g0, .banner-k0, .banner-m0 {
   background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/banner-s1b59d82e27.png');
@@ -211,76 +212,94 @@ body {
 }
 
 /* line 31, ../sass/partials/_structure.scss */
+.pl-0 {
+  padding-left: 0;
+}
+
+/* line 35, ../sass/partials/_structure.scss */
 .ls-c {
   list-style: circle;
 }
 
-/* line 35, ../sass/partials/_structure.scss */
+/* line 39, ../sass/partials/_structure.scss */
 .ls-n {
   list-style: none;
 }
 
-/* line 39, ../sass/partials/_structure.scss */
+/* line 43, ../sass/partials/_structure.scss */
+.ls-rice {
+  list-style: none;
+}
+/* line 45, ../sass/partials/_structure.scss */
+.ls-rice:before {
+  content: "※";
+  position: absolute;
+  text-indent: -1.4em;
+  line-height: 1.6em;
+}
+
+/* line 53, ../sass/partials/_structure.scss */
 .cf {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 43, ../sass/partials/_structure.scss */
-article {
-  display: block;
-  position: relative;
-  width: 1024px;
-  margin: 0 auto;
-  background: white;
-}
-
-/* line 51, ../sass/partials/_structure.scss */
+/* line 57, ../sass/partials/_structure.scss */
 #header-image {
   display: block;
   width: 1024px;
   margin: 0 auto;
 }
 
-/* line 57, ../sass/partials/_structure.scss */
+/* line 63, ../sass/partials/_structure.scss */
+article {
+  display: block;
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+  background: white;
+  border-left: dashed 1px #ddd;
+  border-right: dashed 1px #ddd;
+}
+
+/* line 73, ../sass/partials/_structure.scss */
 .panel {
   position: relative;
   width: 100%;
   padding: 0 73px;
 }
 
-/* line 65, ../sass/partials/_structure.scss */
+/* line 81, ../sass/partials/_structure.scss */
 #header-panel {
   text-align: center;
 }
 
-/* line 69, ../sass/partials/_structure.scss */
+/* line 85, ../sass/partials/_structure.scss */
 nav {
-  margin: 13px 0px 13px 0px;
-  margin: 1.3rem 0rem 1.3rem 0rem;
+  margin: 0 0 13px;
+  padding-top: 13px;
 }
-/* line 71, ../sass/partials/_structure.scss */
+/* line 88, ../sass/partials/_structure.scss */
 nav a {
-  margin: 0px 13px 0px 0px;
-  margin: 0rem 1.3rem 0rem 0rem;
+  margin-right: 13px;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
 }
-/* line 74, ../sass/partials/_structure.scss */
+/* line 91, ../sass/partials/_structure.scss */
 nav a:last-child {
   margin: 0;
 }
 
-/* line 82, ../sass/partials/_structure.scss */
+/* line 99, ../sass/partials/_structure.scss */
 #intro-panel {
   text-align: center;
 }
 
-/* line 86, ../sass/partials/_structure.scss */
-#intro-header-left, #intro-header-right {
+/* line 103, ../sass/partials/_structure.scss */
+.intro-header-contents {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -288,13 +307,12 @@ nav a:last-child {
   *display: inline;
 }
 
-/* line 90, ../sass/partials/_structure.scss */
-h1 {
+/* line 107, ../sass/partials/_structure.scss */
+h1, h1 a {
   width: 110px;
   height: 110px;
-  color: transparent;
 }
-/* line 94, ../sass/partials/_structure.scss */
+/* line 110, ../sass/partials/_structure.scss */
 h1 a {
   display: block;
   width: 100%;
@@ -306,24 +324,24 @@ h1 a {
   background-size: 110px;
 }
 
-/* line 103, ../sass/partials/_structure.scss */
+/* line 119, ../sass/partials/_structure.scss */
 #nav-image-wrapper {
   position: relative;
   height: 652px;
 }
 
-/* line 108, ../sass/partials/_structure.scss */
+/* line 124, ../sass/partials/_structure.scss */
 #nav-image-base, .nav-image-link {
   position: absolute;
 }
 
-/* line 112, ../sass/partials/_structure.scss */
+/* line 128, ../sass/partials/_structure.scss */
 #nav-image-base {
   top: 0px;
   left: 180px;
 }
 
-/* line 118, ../sass/partials/_structure.scss */
+/* line 134, ../sass/partials/_structure.scss */
 .nav-image-link {
   width: 124px;
   height: 124px;
@@ -335,48 +353,48 @@ h1 a {
   border-radius: 50%;
 }
 
-/* line 128, ../sass/partials/_structure.scss */
+/* line 144, ../sass/partials/_structure.scss */
 .nav-image-cf {
   top: 0;
   left: 56px;
 }
 
-/* line 133, ../sass/partials/_structure.scss */
+/* line 149, ../sass/partials/_structure.scss */
 .nav-image-kr {
   top: 0;
   left: 698px;
 }
 
-/* line 138, ../sass/partials/_structure.scss */
+/* line 154, ../sass/partials/_structure.scss */
 .nav-image-gs {
   top: 138px;
   left: 698px;
 }
 
-/* line 143, ../sass/partials/_structure.scss */
+/* line 159, ../sass/partials/_structure.scss */
 .nav-image-pk {
   top: 349px;
   left: 56px;
 }
 
-/* line 150, ../sass/partials/_structure.scss */
+/* line 166, ../sass/partials/_structure.scss */
 .cafe-panel-left {
   float: left;
   width: 478px;
 }
 
-/* line 155, ../sass/partials/_structure.scss */
+/* line 171, ../sass/partials/_structure.scss */
 .cafe-panel-right {
   float: right;
   width: 378px;
 }
 
-/* line 160, ../sass/partials/_structure.scss */
+/* line 176, ../sass/partials/_structure.scss */
 #cafe-panel-image {
   margin: 0;
   padding: 0;
 }
-/* line 164, ../sass/partials/_structure.scss */
+/* line 180, ../sass/partials/_structure.scss */
 #cafe-panel-image li:last-child {
   width: 122px;
   height: 110px;
@@ -388,7 +406,7 @@ h1 a {
   *zoom: 1;
   *display: inline;
 }
-/* line 171, ../sass/partials/_structure.scss */
+/* line 187, ../sass/partials/_structure.scss */
 #cafe-panel-image li a {
   display: block;
   width: 100%;
@@ -396,16 +414,120 @@ h1 a {
   text-align: center;
 }
 
-/* line 182, ../sass/partials/_structure.scss */
+/* line 196, ../sass/partials/_structure.scss */
+.kidsroom-panel-left {
+  float: left;
+  width: 366px;
+}
+
+/* line 201, ../sass/partials/_structure.scss */
+.kidsroom-panel-right {
+  float: right;
+  width: 490px;
+}
+
+/* line 206, ../sass/partials/_structure.scss */
+.glass-panel-left {
+  float: left;
+  width: 480px;
+}
+
+/* line 211, ../sass/partials/_structure.scss */
+.glass-panel-right {
+  float: right;
+  width: 376px;
+}
+
+/* line 216, ../sass/partials/_structure.scss */
+#glass-panel-image {
+  margin: 0;
+  padding: 0;
+}
+/* line 220, ../sass/partials/_structure.scss */
+#glass-panel-image li:last-child {
+  width: 122px;
+  height: 122px;
+  border: solid 1px grey;
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 227, ../sass/partials/_structure.scss */
+#glass-panel-image li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* line 236, ../sass/partials/_structure.scss */
+#google-map {
+  float: left;
+}
+
+/* line 240, ../sass/partials/_structure.scss */
+#image-map {
+  width: 376px;
+  height: 192px;
+}
+
+/* line 247, ../sass/partials/_structure.scss */
 footer {
   width: 100%;
   height: 50px;
   padding: 0 73px;
   vertical-align: middle;
-  border-top: solid 1px grey;
+  border-top: dashed 1px #ddd;
 }
 
 /* line 3, ../sass/partials/_typography.scss */
-body {
-  color: #222;
+a, form, li, p, span, td, ul, h4, h4 a, h5 a, h5, h1, h1 a, h2, h2 a, h3 a, h3 {
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1.615;
+}
+
+/* line 13, ../sass/partials/_typography.scss */
+a, form, li, p, span, td, ul, h4, h4 a, h5 a, h5, h1, h1 a, h2, h2 a, h3 a, h3 {
+  font-family: "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "times new roman", serif;
+}
+
+/* line 23, ../sass/partials/_typography.scss */
+a, form, li, p, span, td, ul, h4, h4 a, h5 a, h5 {
+  font-size: 15px;
+}
+
+/* line 28, ../sass/partials/_typography.scss */
+h1, h1 a {
+  font-size: 21px;
+  visibility: hidden;
+}
+/* line 32, ../sass/partials/_typography.scss */
+h1 a {
+  visibility: initial;
+}
+
+/* line 38, ../sass/partials/_typography.scss */
+h2, h2 a, h3 a, h3 {
+  font-size: 21px;
+}
+
+/* line 46, ../sass/partials/_typography.scss */
+h4, h4 a, h5 a, h5 {
+  font-size: 15px;
+}
+
+/* line 55, ../sass/partials/_typography.scss */
+article > footer p {
+  font-size: 13px;
+}
+/* line 57, ../sass/partials/_typography.scss */
+article > footer p a {
+  font-size: inherit;
 }
