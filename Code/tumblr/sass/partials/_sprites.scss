@@ -10,7 +10,6 @@
 
 // Include
 
-//@include all-intro-sprites;
 @include all-banner-sprites;
 @include all-cafe_interior-sprites;
 @include all-cafe_menu-sprites;
@@ -21,7 +20,8 @@
 // Individual sprite styles
 
 %sprite {
-  @include inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .banner-sprite {

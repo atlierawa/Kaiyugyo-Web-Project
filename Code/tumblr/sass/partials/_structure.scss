@@ -16,10 +16,288 @@ body {
   background: #fafafa;
 }
 
+// Global
+
+#header-image {
+  display: block;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+article {
+  display: block;
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+  background: white;
+  border-left: dashed 1px #ddd;
+  border-right: dashed 1px #ddd;
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  padding: 0 72px;
+}
+
+.panel-footer {
+  text-align: right;
+}
+
+// Header panel
+
+#header-panel {
+  text-align: center;
+}
+
+nav {
+  padding-top: 13px;
+  a {
+    margin-right: 13px;
+    @include inline-block;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+// Intro panel
+
+#intro-panel {
+  text-align: center;
+}
+
+.intro-header-contents {
+  position: relative;
+  width: 180px;
+  height: 110px;
+  margin-right: 21px;
+  @include inline-block;
+  &:first-child {
+    width: 110px;
+  }
+  &:last-child {
+    margin: 0;
+  }
+  h4 {
+    margin-top: 6px;
+  }
+  ul {
+    padding-top: 13px;
+    border-top: solid 1px black;
+    li {
+      font-size: 13px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 39px;
+      left: 87px;
+      border: solid 6px transparent;
+      border-bottom: solid 6px black;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 87px;
+      border: solid 6px transparent;
+      border-bottom: solid 6px white;
+    }
+  }
+}
+
+h1 {
+  width: 110px;
+  height: 110px;
+  margin: 0;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/logo.jpg") no-repeat;
+    @include background-size(110px);
+  }
+}
+
+#nav-image {
+  position: relative;
+  width: 100%;
+}
+
+#nav-image-base {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-image-link {
+  position: absolute;
+  width: 124px;
+  height: 124px;
+  text-align: center;
+  line-height: 124px;
+  border: solid 1px black;
+  @include border-radius(50%);
+}
+
+.nav-image-cf {
+  top: 0;
+  left: 57px;
+}
+
+.nav-image-kr {
+  top: 0;
+  right: 57px;
+}
+
+.nav-image-gs {
+  top: 138px;
+  right: 57px;
+}
+
+.nav-image-pk {
+  top: 349px;
+  left: 57px;
+}
+
+#nav-image-swing {
+  float: left;
+  width: 242px;
+  margin: 0 0 0 181px;
+}
+
+#nav-image-text {
+  text-align: left;
+}
+
+// Cafe panel
+
+.cafe-panel-image1 {
+  float: right;
+  width: 478px;
+  margin-left: 30px;
+  span {
+    float: left;
+    &:last-child {
+      margin-top: 10px;
+    }
+  }
+}
+
+.cafe-panel-image2 {
+  float: left;
+  width: 250px;
+  margin-right: 30px;
+  span {
+    float: left;
+    &:last-child {
+      display: block;
+      width: 122px;
+      height: 110px;
+      border: solid 1px grey;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 25% 5%;
+      text-align: center;
+    }
+  }
+}
+
+// Kidsroom panel
+
+.kidsroom-panel-image {
+  float: right;
+  width: 242px;
+  margin-left: 30px;
+  span {
+    float: left;
+  }
+}
+
+// Glass panel
+
+.glass-panel-text1 {
+  float: left;
+  width: 424px;
+  margin-right: 30px;
+}
+
+.glass-panel-text2 {
+  float: left;
+  width: 424px;
+  margin-bottom: 20px;
+}
+
+.glass-panel-image1 {
+  float: left;
+  width: 424px; // Remove latter
+}
+
+.glass-panel-text3 {
+  clear: left;
+}
+
+.glass-panel-image2 {
+  float: left;
+  width: 250px;
+  margin-right: 30px;
+  span {
+    float: left;
+    border: solid 1px grey;
+    &:last-child {
+      display: block;
+      width: 122px;
+      height: 122px;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 30% 10%;
+      text-align: center;
+    }
+  }
+}
+
+.glass-panel-text4 {
+  float: left;
+  width: 598px;
+}
+
+#glass-panel > footer {
+  clear: left;
+}
+
+// Access panel
+
+.access-panel-image {
+  float: right;
+  width: 376px;
+  margin-left: 30px;
+}
+
+// Footer
+
+article > footer {
+  width: 100%;
+  height: 50px;
+  padding: 0 72px;
+  vertical-align: middle;
+  border-top: dashed 1px #ddd;
+}
+
 // Widgets
 
 .mt0 {
   margin-top: 0;
+}
+
+.mb6 {
+  margin-bottom: 6px;
 }
 
 .mb130 {
@@ -32,6 +310,10 @@ body {
 
 .mb50 {
   margin-bottom: 50px;
+}
+
+.mr6 {
+  margin-right: 6px;
 }
 
 .mr22 {
@@ -60,230 +342,14 @@ body {
   }  
 }
 
+.ls-fix20 {
+  padding-left: 20px;
+}
+
+.ls-fix300 {
+  padding-left: 300px;
+}
+
 .cf {
   @include clearfix;
-}
-
-// Global
-
-#header-image {
-  display: block;
-  width: 1024px;
-  margin: 0 auto;
-}
-
-article {
-  display: block;
-  position: relative;
-  width: 1024px;
-  margin: 0 auto;
-  background: white;
-  border-left: dashed 1px #ddd;
-  border-right: dashed 1px #ddd;
-}
-
-.panel {
-  position: relative;
-  width: 100%;
-  padding: 0 72px;
-}
-
-// Header panel
-
-#header-panel {
-  text-align: center;
-}
-
-nav {
-  margin: 0 0 13px;
-  padding-top: 13px;
-  a {
-    margin-right: 13px;
-    @include inline-block;
-    &:last-child {
-      margin: 0;
-    }
-  }
-}
-
-// Intro panel
-
-#intro-panel {
-  text-align: center;
-}
-
-.intro-header-contents {
-  @include inline-block;
-}
-
-h1 {
-  width: 110px;
-  height: 110px;
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/logo.jpg") no-repeat;
-    @include background-size(110px);
-  }
-}
-
-#nav-image-wrapper {
-  position: relative;
-  height: 652px;
-}
-
-%nav-image {
-  position: absolute;
-}
-
-#nav-image-base {
-  @extend %nav-image;
-  top: 0px;
-  left: 180px;
-}
-
-.nav-image-link {
-  @extend %nav-image;
-  width: 124px;
-  height: 124px;
-  text-align: center;
-  line-height: 124px;
-  border: solid 1px black;
-  @include border-radius(50%);
-}
-
-.nav-image-cf {
-  top: 0;
-  left: 56px;
-}
-
-.nav-image-kr {
-  top: 0;
-  left: 698px;
-}
-
-.nav-image-gs {
-  top: 138px;
-  left: 698px;
-}
-
-.nav-image-pk {
-  top: 379px;
-  left: 56px;
-}
-
-#nav-swing-image {
-  @extend %nav-image;
-  top: 379px;
-  left: 189px;
-}
-#nav-image-text {
-  @extend %nav-image;
-  bottom: 0;
-  left: 56px;
-  text-align: left;
-}
-
-// Cafe panel
-
-.cafe-panel-left {
-  float: left;
-  width: 478px;
-}
-
-.cafe-panel-right {
-  float: left;
-  width: 378px;
-}
-
-#cafe-panel-image {
-  margin: 0;
-  padding: 0;
-  li {
-    &:last-child {
-      width: 122px;
-      height: 110px;
-      border: solid 1px grey;
-      list-style: none;
-      @include inline-block;
-    }
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-    }
-  }
-}
-
-// Kidsroom panel
-
-.kidsroom-panel-left {
-  float: left;
-  width: 366px;
-}
-
-.kidsroom-panel-right {
-  float: left;
-  width: 490px;
-}
-
-#kidsroom-panel-image {
-  margin: 0;
-  padding: 0;
-}
-
-// Glass panel
-
-.glass-panel-left {
-  float: left;
-  width: 480px;
-}
-
-.glass-panel-right {
-  float: left;
-  width: 376px;
-}
-
-#glass-panel-image {
-  margin: 0;
-  padding: 0;
-  li {
-    &:last-child {
-      width: 122px;
-      height: 122px;
-      border: solid 1px grey;
-      list-style: none;
-      @include inline-block;
-    }
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-    }
-  }
-}
-
-// Access panel
-
-#google-map {
-  float: left;
-  margin-right: 102px;
-}
-
-#image-map {
-  width: 376px;
-  height: 192px;
-}
-
-// Footer
-
-footer {
-  width: 100%;
-  height: 50px;
-  padding: 0 72px;
-  vertical-align: middle;
-  border-top: dashed 1px #ddd;
 }

@@ -130,13 +130,10 @@
   background-position: 0 -244px;
 }
 
-/* line 23, ../sass/partials/_sprites.scss */
+/* line 22, ../sass/partials/_sprites.scss */
 .banner-sprite, .banner-g0, .banner-k0, .banner-m0, .cafe_interior-sprite, .cafe_interior-m2, .cafe_interior-m3, .cafe_menu-sprite, .cafe_menu-m4-1, .cafe_menu-m4-2, .cafe_menu-m4-3, .cafe_menu-m4-4, .cafe_menu-m4-5, .kidsroom-sprite, .kidsroom-k1, .kidsroom-k2, .kidsroom-k3, .kidsroom-k4, .glass_banner-sprite, .glass_banner-g1, .glass_banner-g2, .glass_work-sprite, .glass_work-g3-1, .glass_work-g3-2, .glass_work-g3-3 {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 /* line 27, ../sass/partials/_sprites.scss */
@@ -173,344 +170,6 @@
 .glass_work-sprite, .glass_work-g3-1, .glass_work-g3-2, .glass_work-g3-3 {
   width: 122px;
   height: 122px;
-}
-
-/* line 3, ../sass/partials/_structure.scss */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 7, ../sass/partials/_structure.scss */
-html {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 12, ../sass/partials/_structure.scss */
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background: #fafafa;
-}
-
-/* line 21, ../sass/partials/_structure.scss */
-.mt0 {
-  margin-top: 0;
-}
-
-/* line 25, ../sass/partials/_structure.scss */
-.mb130 {
-  margin-bottom: 130px;
-}
-
-/* line 29, ../sass/partials/_structure.scss */
-.mb66 {
-  margin-bottom: 66px;
-}
-
-/* line 33, ../sass/partials/_structure.scss */
-.mb50 {
-  margin-bottom: 50px;
-}
-
-/* line 37, ../sass/partials/_structure.scss */
-.mr22 {
-  margin-right: 22px;
-}
-
-/* line 41, ../sass/partials/_structure.scss */
-.pl0 {
-  padding-left: 0;
-}
-
-/* line 45, ../sass/partials/_structure.scss */
-.ls-c {
-  list-style: circle;
-}
-
-/* line 49, ../sass/partials/_structure.scss */
-.ls-n {
-  list-style: none;
-}
-
-/* line 53, ../sass/partials/_structure.scss */
-.ls-rice {
-  list-style: none;
-}
-/* line 55, ../sass/partials/_structure.scss */
-.ls-rice:before {
-  content: "※";
-  position: absolute;
-  text-indent: -1.4em;
-  line-height: 1.6em;
-}
-
-/* line 63, ../sass/partials/_structure.scss */
-.cf {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* line 69, ../sass/partials/_structure.scss */
-#header-image {
-  display: block;
-  width: 1024px;
-  margin: 0 auto;
-}
-
-/* line 75, ../sass/partials/_structure.scss */
-article {
-  display: block;
-  position: relative;
-  width: 1024px;
-  margin: 0 auto;
-  background: white;
-  border-left: dashed 1px #ddd;
-  border-right: dashed 1px #ddd;
-}
-
-/* line 85, ../sass/partials/_structure.scss */
-.panel {
-  position: relative;
-  width: 100%;
-  padding: 0 72px;
-}
-
-/* line 93, ../sass/partials/_structure.scss */
-#header-panel {
-  text-align: center;
-}
-
-/* line 97, ../sass/partials/_structure.scss */
-nav {
-  margin: 0 0 13px;
-  padding-top: 13px;
-}
-/* line 100, ../sass/partials/_structure.scss */
-nav a {
-  margin-right: 13px;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-}
-/* line 103, ../sass/partials/_structure.scss */
-nav a:last-child {
-  margin: 0;
-}
-
-/* line 111, ../sass/partials/_structure.scss */
-#intro-panel {
-  text-align: center;
-}
-
-/* line 115, ../sass/partials/_structure.scss */
-.intro-header-contents {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-}
-
-/* line 119, ../sass/partials/_structure.scss */
-h1, h1 a {
-  width: 110px;
-  height: 110px;
-}
-/* line 122, ../sass/partials/_structure.scss */
-h1 a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/logo.jpg") no-repeat;
-  -moz-background-size: 110px;
-  -o-background-size: 110px;
-  -webkit-background-size: 110px;
-  background-size: 110px;
-}
-
-/* line 131, ../sass/partials/_structure.scss */
-#nav-image-wrapper {
-  position: relative;
-  height: 652px;
-}
-
-/* line 136, ../sass/partials/_structure.scss */
-#nav-image-base, .nav-image-link, #nav-swing-image, #nav-image-text {
-  position: absolute;
-}
-
-/* line 140, ../sass/partials/_structure.scss */
-#nav-image-base {
-  top: 0px;
-  left: 180px;
-}
-
-/* line 146, ../sass/partials/_structure.scss */
-.nav-image-link {
-  width: 124px;
-  height: 124px;
-  text-align: center;
-  line-height: 124px;
-  border: solid 1px black;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-
-/* line 156, ../sass/partials/_structure.scss */
-.nav-image-cf {
-  top: 0;
-  left: 56px;
-}
-
-/* line 161, ../sass/partials/_structure.scss */
-.nav-image-kr {
-  top: 0;
-  left: 698px;
-}
-
-/* line 166, ../sass/partials/_structure.scss */
-.nav-image-gs {
-  top: 138px;
-  left: 698px;
-}
-
-/* line 171, ../sass/partials/_structure.scss */
-.nav-image-pk {
-  top: 379px;
-  left: 56px;
-}
-
-/* line 176, ../sass/partials/_structure.scss */
-#nav-swing-image {
-  top: 379px;
-  left: 189px;
-}
-
-/* line 181, ../sass/partials/_structure.scss */
-#nav-image-text {
-  bottom: 0;
-  left: 56px;
-  text-align: left;
-}
-
-/* line 190, ../sass/partials/_structure.scss */
-.cafe-panel-left {
-  float: left;
-  width: 478px;
-}
-
-/* line 195, ../sass/partials/_structure.scss */
-.cafe-panel-right {
-  float: left;
-  width: 378px;
-}
-
-/* line 200, ../sass/partials/_structure.scss */
-#cafe-panel-image {
-  margin: 0;
-  padding: 0;
-}
-/* line 204, ../sass/partials/_structure.scss */
-#cafe-panel-image li:last-child {
-  width: 122px;
-  height: 110px;
-  border: solid 1px grey;
-  list-style: none;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-}
-/* line 211, ../sass/partials/_structure.scss */
-#cafe-panel-image li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-/* line 222, ../sass/partials/_structure.scss */
-.kidsroom-panel-left {
-  float: left;
-  width: 366px;
-}
-
-/* line 227, ../sass/partials/_structure.scss */
-.kidsroom-panel-right {
-  float: left;
-  width: 490px;
-}
-
-/* line 232, ../sass/partials/_structure.scss */
-#kidsroom-panel-image {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 239, ../sass/partials/_structure.scss */
-.glass-panel-left {
-  float: left;
-  width: 480px;
-}
-
-/* line 244, ../sass/partials/_structure.scss */
-.glass-panel-right {
-  float: left;
-  width: 376px;
-}
-
-/* line 249, ../sass/partials/_structure.scss */
-#glass-panel-image {
-  margin: 0;
-  padding: 0;
-}
-/* line 253, ../sass/partials/_structure.scss */
-#glass-panel-image li:last-child {
-  width: 122px;
-  height: 122px;
-  border: solid 1px grey;
-  list-style: none;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-}
-/* line 260, ../sass/partials/_structure.scss */
-#glass-panel-image li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-/* line 271, ../sass/partials/_structure.scss */
-#google-map {
-  float: left;
-  margin-right: 102px;
-}
-
-/* line 276, ../sass/partials/_structure.scss */
-#image-map {
-  width: 376px;
-  height: 192px;
-}
-
-/* line 283, ../sass/partials/_structure.scss */
-footer {
-  width: 100%;
-  height: 50px;
-  padding: 0 72px;
-  vertical-align: middle;
-  border-top: dashed 1px #ddd;
 }
 
 /* line 3, ../sass/partials/_typography.scss */
@@ -553,11 +212,445 @@ h4, h4 a, h5 a, h5 {
   font-size: 15px;
 }
 
-/* line 55, ../sass/partials/_typography.scss */
-article > footer p {
+/* line 54, ../sass/partials/_typography.scss */
+.font-small {
   font-size: 13px;
 }
-/* line 57, ../sass/partials/_typography.scss */
-article > footer p a {
+
+/* line 58, ../sass/partials/_typography.scss */
+.font-italic {
+  font-style: italic;
+}
+
+/* line 62, ../sass/partials/_typography.scss */
+.nav-image-link {
+  font-size: 18px;
+}
+
+/* line 66, ../sass/partials/_typography.scss */
+footer p {
+  font-size: 13px;
+}
+/* line 68, ../sass/partials/_typography.scss */
+footer p a {
   font-size: inherit;
+}
+
+/* line 3, ../sass/partials/_structure.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/partials/_structure.scss */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../sass/partials/_structure.scss */
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+
+/* line 21, ../sass/partials/_structure.scss */
+#header-image {
+  display: block;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* line 27, ../sass/partials/_structure.scss */
+article {
+  display: block;
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+  background: white;
+  border-left: dashed 1px #ddd;
+  border-right: dashed 1px #ddd;
+}
+
+/* line 37, ../sass/partials/_structure.scss */
+.panel {
+  position: relative;
+  width: 100%;
+  padding: 0 72px;
+}
+
+/* line 43, ../sass/partials/_structure.scss */
+.panel-footer {
+  text-align: right;
+}
+
+/* line 49, ../sass/partials/_structure.scss */
+#header-panel {
+  text-align: center;
+}
+
+/* line 53, ../sass/partials/_structure.scss */
+nav {
+  padding-top: 13px;
+}
+/* line 55, ../sass/partials/_structure.scss */
+nav a {
+  margin-right: 13px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 58, ../sass/partials/_structure.scss */
+nav a:last-child {
+  margin: 0;
+}
+
+/* line 66, ../sass/partials/_structure.scss */
+#intro-panel {
+  text-align: center;
+}
+
+/* line 70, ../sass/partials/_structure.scss */
+.intro-header-contents {
+  position: relative;
+  width: 180px;
+  height: 110px;
+  margin-right: 21px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 76, ../sass/partials/_structure.scss */
+.intro-header-contents:first-child {
+  width: 110px;
+}
+/* line 79, ../sass/partials/_structure.scss */
+.intro-header-contents:last-child {
+  margin: 0;
+}
+/* line 82, ../sass/partials/_structure.scss */
+.intro-header-contents h4, .intro-header-contents h4 a, h4 .intro-header-contents a, .intro-header-contents h5 a, h5 .intro-header-contents a {
+  margin-top: 6px;
+}
+/* line 85, ../sass/partials/_structure.scss */
+.intro-header-contents ul {
+  padding-top: 13px;
+  border-top: solid 1px black;
+}
+/* line 88, ../sass/partials/_structure.scss */
+.intro-header-contents ul li {
+  font-size: 13px;
+}
+/* line 91, ../sass/partials/_structure.scss */
+.intro-header-contents ul:before {
+  content: "";
+  position: absolute;
+  top: 39px;
+  left: 87px;
+  border: solid 6px transparent;
+  border-bottom: solid 6px black;
+}
+/* line 99, ../sass/partials/_structure.scss */
+.intro-header-contents ul:after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 87px;
+  border: solid 6px transparent;
+  border-bottom: solid 6px white;
+}
+
+/* line 110, ../sass/partials/_structure.scss */
+h1, h1 a {
+  width: 110px;
+  height: 110px;
+  margin: 0;
+}
+/* line 114, ../sass/partials/_structure.scss */
+h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/logo.jpg") no-repeat;
+  -moz-background-size: 110px;
+  -o-background-size: 110px;
+  -webkit-background-size: 110px;
+  background-size: 110px;
+}
+
+/* line 123, ../sass/partials/_structure.scss */
+#nav-image {
+  position: relative;
+  width: 100%;
+}
+
+/* line 128, ../sass/partials/_structure.scss */
+#nav-image-base {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 134, ../sass/partials/_structure.scss */
+.nav-image-link {
+  position: absolute;
+  width: 124px;
+  height: 124px;
+  text-align: center;
+  line-height: 124px;
+  border: solid 1px black;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 144, ../sass/partials/_structure.scss */
+.nav-image-cf {
+  top: 0;
+  left: 57px;
+}
+
+/* line 149, ../sass/partials/_structure.scss */
+.nav-image-kr {
+  top: 0;
+  right: 57px;
+}
+
+/* line 154, ../sass/partials/_structure.scss */
+.nav-image-gs {
+  top: 138px;
+  right: 57px;
+}
+
+/* line 159, ../sass/partials/_structure.scss */
+.nav-image-pk {
+  top: 349px;
+  left: 57px;
+}
+
+/* line 164, ../sass/partials/_structure.scss */
+#nav-image-swing {
+  float: left;
+  width: 242px;
+  margin: 0 0 0 181px;
+}
+
+/* line 170, ../sass/partials/_structure.scss */
+#nav-image-text {
+  text-align: left;
+}
+
+/* line 176, ../sass/partials/_structure.scss */
+.cafe-panel-image1 {
+  float: right;
+  width: 478px;
+  margin-left: 30px;
+}
+/* line 180, ../sass/partials/_structure.scss */
+.cafe-panel-image1 span {
+  float: left;
+}
+/* line 182, ../sass/partials/_structure.scss */
+.cafe-panel-image1 span:last-child {
+  margin-top: 10px;
+}
+
+/* line 188, ../sass/partials/_structure.scss */
+.cafe-panel-image2 {
+  float: left;
+  width: 250px;
+  margin-right: 30px;
+}
+/* line 192, ../sass/partials/_structure.scss */
+.cafe-panel-image2 span {
+  float: left;
+}
+/* line 194, ../sass/partials/_structure.scss */
+.cafe-panel-image2 span:last-child {
+  display: block;
+  width: 122px;
+  height: 110px;
+  border: solid 1px grey;
+}
+/* line 200, ../sass/partials/_structure.scss */
+.cafe-panel-image2 span a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 25% 5%;
+  text-align: center;
+}
+
+/* line 212, ../sass/partials/_structure.scss */
+.kidsroom-panel-image {
+  float: right;
+  width: 242px;
+  margin-left: 30px;
+}
+/* line 216, ../sass/partials/_structure.scss */
+.kidsroom-panel-image span {
+  float: left;
+}
+
+/* line 223, ../sass/partials/_structure.scss */
+.glass-panel-text1 {
+  float: left;
+  width: 424px;
+  margin-right: 30px;
+}
+
+/* line 229, ../sass/partials/_structure.scss */
+.glass-panel-text2 {
+  float: left;
+  width: 424px;
+  margin-bottom: 20px;
+}
+
+/* line 235, ../sass/partials/_structure.scss */
+.glass-panel-image1 {
+  float: left;
+  width: 424px;
+}
+
+/* line 240, ../sass/partials/_structure.scss */
+.glass-panel-text3 {
+  clear: left;
+}
+
+/* line 244, ../sass/partials/_structure.scss */
+.glass-panel-image2 {
+  float: left;
+  width: 250px;
+  margin-right: 30px;
+}
+/* line 248, ../sass/partials/_structure.scss */
+.glass-panel-image2 span {
+  float: left;
+  border: solid 1px grey;
+}
+/* line 251, ../sass/partials/_structure.scss */
+.glass-panel-image2 span:last-child {
+  display: block;
+  width: 122px;
+  height: 122px;
+}
+/* line 256, ../sass/partials/_structure.scss */
+.glass-panel-image2 span a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 30% 10%;
+  text-align: center;
+}
+
+/* line 266, ../sass/partials/_structure.scss */
+.glass-panel-text4 {
+  float: left;
+  width: 598px;
+}
+
+/* line 271, ../sass/partials/_structure.scss */
+#glass-panel > footer {
+  clear: left;
+}
+
+/* line 277, ../sass/partials/_structure.scss */
+.access-panel-image {
+  float: right;
+  width: 376px;
+  margin-left: 30px;
+}
+
+/* line 285, ../sass/partials/_structure.scss */
+article > footer {
+  width: 100%;
+  height: 50px;
+  padding: 0 72px;
+  vertical-align: middle;
+  border-top: dashed 1px #ddd;
+}
+
+/* line 295, ../sass/partials/_structure.scss */
+.mt0 {
+  margin-top: 0;
+}
+
+/* line 299, ../sass/partials/_structure.scss */
+.mb6 {
+  margin-bottom: 6px;
+}
+
+/* line 303, ../sass/partials/_structure.scss */
+.mb130 {
+  margin-bottom: 130px;
+}
+
+/* line 307, ../sass/partials/_structure.scss */
+.mb66 {
+  margin-bottom: 66px;
+}
+
+/* line 311, ../sass/partials/_structure.scss */
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* line 315, ../sass/partials/_structure.scss */
+.mr6 {
+  margin-right: 6px;
+}
+
+/* line 319, ../sass/partials/_structure.scss */
+.mr22 {
+  margin-right: 22px;
+}
+
+/* line 323, ../sass/partials/_structure.scss */
+.pl0 {
+  padding-left: 0;
+}
+
+/* line 327, ../sass/partials/_structure.scss */
+.ls-c {
+  list-style: circle;
+}
+
+/* line 331, ../sass/partials/_structure.scss */
+.ls-n {
+  list-style: none;
+}
+
+/* line 335, ../sass/partials/_structure.scss */
+.ls-rice {
+  list-style: none;
+}
+/* line 337, ../sass/partials/_structure.scss */
+.ls-rice:before {
+  content: "※";
+  position: absolute;
+  text-indent: -1.4em;
+  line-height: 1.6em;
+}
+
+/* line 345, ../sass/partials/_structure.scss */
+.ls-fix20 {
+  padding-left: 20px;
+}
+
+/* line 349, ../sass/partials/_structure.scss */
+.ls-fix300 {
+  padding-left: 300px;
+}
+
+/* line 353, ../sass/partials/_structure.scss */
+.cf {
+  overflow: hidden;
+  *zoom: 1;
 }

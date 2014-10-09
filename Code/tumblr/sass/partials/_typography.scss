@@ -51,11 +51,21 @@ h4, h5 {
   }
 }
 
-article > footer {
-  p {
-    font-size: 13px;
-    a {
-      font-size: inherit;
-    }
+.font-small {
+  font-size: 13px;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.nav-image-link {
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 13px;
+  a {
+    font-size: inherit;
   }
 }
