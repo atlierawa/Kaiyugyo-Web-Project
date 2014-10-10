@@ -1,0 +1,48 @@
+// Contact form partial
+
+input, textarea, button {
+//  width: 100%;
+  margin: 0;
+  padding: 5px 8px;
+  line-height: 1.615;
+  border: solid 1px black;
+  -webkit-appearance: none;
+  @include border-radius(1px);
+}
+
+textarea {
+  resize: none;  
+}
+
+.contact-panel-form {
+  position: relative;
+  width: 390px;
+  margin: 0 auto;
+}
+
+.form-subject > ul {
+  margin-bottom: 13px;
+  li {
+    margin-bottom: 13px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form-name, form-email {
+  position: relative;
+  width: 260px;
+  margin-bottom: 13px;
+}
+
+.form-text {
+  position: relative;
+  width: 390px;
+  margin-bottom: 13px;
+}
+
+#ss-submit {
+  display: block;
+  margin: 0 auto;
+}

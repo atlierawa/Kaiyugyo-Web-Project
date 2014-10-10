@@ -20,7 +20,7 @@
   font-family: "arial", sans-serif;
 }
 
-a, form, li, p, span, td, ul, h4, h5 {
+a, form, li, p, span, table, ul, h4, h5 {
   @extend %text-serif;
   font-size: 15px;
 }
@@ -61,6 +61,13 @@ h4, h5 {
 
 .nav-image-link {
   font-size: 18px;
+}
+
+.glass-panel-table {
+  th, td {
+    font-size: 13px;
+    font-weight: 400;
+  }
 }
 
 footer p {
