@@ -20,6 +20,7 @@
 // Individual sprite styles
 
 %sprite {
+  display: block;
   margin: 0;
   padding: 0;
 }
@@ -50,7 +51,8 @@
 
 .glass_banner-sprite {
   @extend %sprite;
-  width: 548px;
+//  width: 548px;
+  width: 424px;
   height: 100px;
 }
 

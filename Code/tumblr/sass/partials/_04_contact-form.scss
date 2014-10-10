@@ -1,12 +1,11 @@
 // Contact form partial
 
 input, textarea, button {
-//  width: 100%;
   margin: 0;
   padding: 5px 8px;
   line-height: 1.615;
   border: solid 1px black;
-  -webkit-appearance: none;
+  font-size: 13px;
   @include border-radius(1px);
 }
 
@@ -16,33 +15,60 @@ textarea {
 
 .contact-panel-form {
   position: relative;
-  width: 390px;
+  width: 490px;
   margin: 0 auto;
 }
 
-.form-subject > ul {
-  margin-bottom: 13px;
+.formtest {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 30px 50px 15px;
+  background: #fafafa;
+  border: solid 1px grey;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 476px;
+    left: 240px;
+    border: solid 6px transparent;
+    border-top: solid 6px grey;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 475px;
+    left: 240px;
+    border: solid 6px transparent;
+    border-top: solid 6px #fafafa;
+  }
+}
+
+.panel-form-subject > ul {
   li {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
     &:last-child {
       margin-bottom: 0;
     }
   }
 }
-
-.form-name, form-email {
+ 
+.panel-form-name, .panel-form-email, .panel-form-number {
   position: relative;
   width: 260px;
   margin-bottom: 13px;
+  -webkit-appearance: none;
 }
 
-.form-text {
+.panel-form-text {
   position: relative;
   width: 390px;
   margin-bottom: 13px;
+  -webkit-appearance: none;
 }
 
 #ss-submit {
   display: block;
   margin: 0 auto;
+  -webkit-appearance: none;
 }
