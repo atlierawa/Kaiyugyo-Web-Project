@@ -43,6 +43,19 @@ article {
 .panel-footer {
   margin-top: 13px;
   text-align: right;
+  a {
+    position: relative;
+    height: 15px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -23px;
+      width: 18px;
+      height: 18px;
+      background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/l1.png") no-repeat;
+      @include background-size(18px);
+    }
+  }
 }
 
 // Header panel
@@ -56,19 +69,23 @@ nav {
   a {
     margin-right: 13px;
     @include inline-block;
+    @include transition(all 0.1s ease-in-out);
     &:last-child {
       margin: 0;
+    }
+    &:hover {
+      color: #ba429b;
     }
   }
 }
 
-// Intro panel
+// News panel
 
-#intro-panel {
+#news-panel {
   text-align: center;
 }
 
-.intro-header-contents {
+.news-panel-contents {
   position: relative;
   width: 180px;
   height: 110px;
@@ -117,28 +134,34 @@ h1 {
     display: block;
     width: 100%;
     height: 100%;
-    background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/header/logo.jpg") no-repeat;
+    background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i02-1.jpg") no-repeat;
     @include background-size(110px);
   }
 }
 
-.nav-image-caption {
-  display: block;
-  margin-bottom: 13px;
+// Intro panel
+
+#intro-panel {
+  height: 515px;
+  padding: 100px 0 0;
+  text-align: center;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/i1.png") 20px 0 no-repeat;
 }
 
-#nav-image {
+// Nav panel
+
+.nav-panel-contents {
   position: relative;
   width: 100%;
 }
 
-#nav-image-base {
+#nav-panel-base {
   display: block;
   margin: 0 auto;
   padding: 0;
 }
 
-.nav-image-link {
+.nav-panel-link {
   position: absolute;
   width: 124px;
   height: 124px;
@@ -148,33 +171,33 @@ h1 {
   @include border-radius(50%);
 }
 
-.nav-image-cf {
+.nav-panel-cf {
   top: 0;
   left: 57px;
 }
 
-.nav-image-kr {
+.nav-panel-kr {
   top: 0;
   right: 57px;
 }
 
-.nav-image-gs {
+.nav-panel-gs {
   top: 138px;
   right: 57px;
 }
 
-.nav-image-pk {
+.nav-panel-pk {
   top: 349px;
   left: 57px;
 }
 
-#nav-image-swing {
+#nav-panel-swing {
   float: left;
   width: 242px;
   margin: 0 0 0 181px;
 }
 
-#nav-image-text {
+#nav-panel-text {
   text-align: left;
 }
 
@@ -186,10 +209,20 @@ h1 {
   margin-left: 30px;
   span {
     float: left;
+    &:first-child {
+      width: 100%;
+      height: 270px;
+      background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i03-1-c1.png") no-repeat;
+    }
     &:last-child {
       margin-top: 10px;
     }
   }
+}
+
+.cafe-panel-menu {
+  position: relative;
+  z-index: 10;
 }
 
 .cafe-panel-image2 {
@@ -202,7 +235,7 @@ h1 {
       display: block;
       width: 122px;
       height: 110px;
-      background: #BA429B;
+      background: #ba429b;
     }
     a {
       display: block;
@@ -215,6 +248,16 @@ h1 {
   }
 }
 
+.cafe-panel-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 540px;
+  height: 220px;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/c7.png") no-repeat;
+  z-index: -10;
+}
+
 .cafe-panel-table td {
   &:first-child {
     padding-right: 3em;
@@ -225,7 +268,7 @@ h1 {
 
 .kidsroom-panel-image {
   float: right;
-  width: 242px;
+  width: 280px;
   margin-left: 30px;
   span {
     float: left;
@@ -240,7 +283,7 @@ h1 {
   margin-right: 30px;
 }
 
-.glass-panel-table1,  .glass-panel-table2 {
+.glass-panel-table1, .glass-panel-table2, .access-panel-table {
   td {
     &:first-child {
       padding-right: 1em;
@@ -251,6 +294,13 @@ h1 {
 .glass-panel-text2 {
   float: left;
   width: 424px;
+}
+
+.glass-panel-element {
+  float: left;
+  width: 424px;
+  height: 195px;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/g6.png") 37px 0px no-repeat;  
 }
 
 .glass-panel-text3 {
@@ -290,7 +340,7 @@ h1 {
       width: 122px;
       height: 122px;
       border: none;
-      background: #4AA2F2;
+      background: #4aa2f2;
     }
     a {
       display: block;
@@ -331,6 +381,7 @@ article > footer {
   width: 100%;
   height: 50px;
   padding: 0 72px;
+  background: #cfdce5;
   vertical-align: middle;
   border-top: dashed 1px #ddd;
 }
@@ -401,6 +452,11 @@ article > footer {
 
 .link-button {
   border-bottom: dashed 1px;
+  @include transition(all 0.1s ease-in-out);
+  &:hover {
+    border-color: #4aa2f2;
+    color: #4aa2f2;
+  }
 }
 
 .cf {
