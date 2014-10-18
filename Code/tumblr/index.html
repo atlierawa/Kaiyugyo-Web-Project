@@ -118,7 +118,6 @@
         <span class="i03-2_cafe-c6 mr6"></span>
         <span><a href="{BlogURL}tagged/メニュー" title="最新のメニュー" class="font-italic font-small">最新のメニューはこちらから</a></span>
       </div>
-      <div class="cafe-panel-bg"></div>
       <h3 class="mt0 mb0">フード</h3>
       <p class="mt0">季節により、その時季の食材で作るランチ（3種類）&nbsp;&nbsp;&nbsp;900円<br />パスタ＆スープ、カレー、リゾット＆スープ、角煮丼、自家製オイルサーディン丼など。詳しくは<a href="{BlogURL}tagged/メニュー" title="最新のメニュー" class="link-button">「最新のメニュー」</a>をご覧ください。</p>
       <h3 class="mb0">デザート</h3>
@@ -136,6 +135,8 @@
           <td>700円</td>
         </tr>
       </table>
+      <div class="cafe-panel-bg1"></div>
+      <div class="cafe-panel-bg2"></div>
     </section>
     <section>
       <p>醤油、味噌、アンチョビー、ジャム、シロップ類、酵母パン（寒い時季のみ）など、さまざまなモノを手づくりしております。</p>
@@ -157,11 +158,13 @@
       <span class="i04_kidsroom-k1 mb6"></span>
       <span class="i04_kidsroom-k2"></span>
     </div>
-    <p class="mt0">テラスの階段を上がると、2階にはキッズルーム。</p>
-    <p>木の温もりいっぱいの部屋は大人も子どもも楽しめます。<br />おもちゃもあるので小さいお子様は遊びに夢中。<br />その間に、お父さん、お母さんはゆっくりとおくつろぎください。</p>
-    <p>キッズルームをご利用される場合、ご予約をお願いします。<br />ご注文は1階のカフェで承ります。<br />お帰りの際には、食器類を棚のトレーに、おもちゃを元の場所にお戻しください。</p>
-    <p>遊び盛りの子どもたちのための、もう一つの遊び場が「どんぐり公園」。</p>
-    <p>外に出て、庭のどんぐり（マテバシイ）の木の下におりると、木製のシーソー、ブランコ、滑り台、鉄棒やハンモックが並んでいます。よ～く見てみるといろんな虫や植物や鳥に出会えるよ！</p>
+    <section class="kidsroom-panel-text">
+      <p class="mt0">テラスの階段を上がると、2階にはキッズルーム。</p>
+      <p>木の温もりいっぱいの部屋は大人も子どもも楽しめます。<br />おもちゃもあるので小さいお子様は遊びに夢中。<br />その間に、お父さん、お母さんはゆっくりとおくつろぎください。</p>
+      <p>キッズルームをご利用される場合、ご予約をお願いします。<br />ご注文は1階のカフェで承ります。<br />お帰りの際には、食器類を棚のトレーに、おもちゃを元の場所にお戻しください。</p>
+      <p>遊び盛りの子どもたちのための、もう一つの遊び場が「どんぐり公園」。</p>
+      <p>外に出て、庭のどんぐり（マテバシイ）の木の下におりると、木製のシーソー、ブランコ、滑り台、鉄棒やハンモックが並んでいます。よ～く見てみるといろんな虫や植物や鳥に出会えるよ！</p>
+    </section>
     <footer class="panel-footer">
       <a href="#top-ancher" class="link-button font-small">最初に戻る</a>
     </footer>
@@ -196,7 +199,7 @@
           <li class="font-small">制作した作品のお渡しは翌日以降になります。配送の場合は着払いでの発送になります。</li>
         </ul>
       </section>
-      <section class="glass-panel-text2 mb50">
+      <section class="glass-panel-text2">
         <h3 class="mt0">サンドキャスト&nbsp;<span>&mdash;お子様の手型・足型に&mdash;</span></h3>
         <span class="i05-1_glass-g2"></span>
         <p>水で湿らせた砂に手足を押し当て、できたくぼみに溶けたガラスを流し込んで作品を作ります。お子様の成長の記念にいかがですか？（お名前や日付を刻み込む事もできます）</p>
@@ -305,7 +308,7 @@
     </footer>
   </section>
 
-  <section id="contact-panel" class="panel mb130">
+  <section id="contact-panel" class="panel">
     <h2 id="contact">お問い合わせ</h2>
     <p class="mb50">カフェ、工房へのお問い合わせ、またはお申込みは以下のフォームからお願いいたします。<br /><span class="font-small">※&nbsp;項目はすべてご入力ください。</span></p>
     <section class="contact-panel-form">
@@ -372,10 +375,20 @@
 
   {block:PermalinkPage}
   <section id="" class="mb130">
-    {block:Posts}{block:Text}
+    {block:Posts}
+    {block:Text}
     {block:Title}<h2>{Title}</h2>{/block:Title}
     {Body}
-    {/block:Text}{/block:Posts}
+    {/block:Text}
+
+    {block:Photo}
+    <section id="" class="mb50">
+    {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
+    {block:Caption}<p>{Caption}</p>{block:Caption}
+    {block:Date}<span>{Year}&nbsp;/&nbsp;{MonthNumber}&nbsp;/&nbsp;{DayOfMonthWithZero}</span>{/block:Date}
+    </section>
+    {/block:Photo}
+    {/block:Posts}  
   </section>
   {/block:PermalinkPage}
 
@@ -390,16 +403,6 @@
       {Body}
       </section>
       {/block:Text}
-
-  <!--
-      {block:Photo}
-      <section id="" class="mb50">
-      {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
-      {block:Caption}<p>{Caption}</p>{block:Caption}
-      {block:Date}<span>{Year}&nbsp;/&nbsp;{MonthNumber}&nbsp;/&nbsp;{DayOfMonthWithZero}</span>{/block:Date}
-      </section>
-      {/block:Photo}
-  -->
 
       {block:Photo}
       <li><img src="{PhotoURL-400}" alt="{PhotoAlt}" /></li>
@@ -417,8 +420,10 @@
   </section>
   {/block:TagPage}
 
-  <footer role="contentinfo">
-    <p>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a>&nbsp;/&nbsp;Design and coded by <a href="" title="" target="_blank">OUR*IRO</a></p>
+  <div class="footer-element"></div>
+  <footer role="contentinfo" class="cf">
+    <a href="https://www.facebook.com/pages/Cafeガラス工房海遊魚/1415264945362882" class="footer-icon-fb" title="Facebook" target="_blank"></a>
+    <p>Copyright&nbsp;&copy;&nbsp;{CopyrightYears}&nbsp;<a href="{BlogURL}" title="">{Title}</a>&nbsp;/&nbsp;Designed and coded by <a href="" title="" target="_blank">OUR*IRO</a></p>
   </footer>
 </article>
 <!-- jQuery libs and scripts -->

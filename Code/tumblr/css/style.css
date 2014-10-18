@@ -513,51 +513,64 @@ h1 a {
 }
 
 /* line 251, ../sass/partials/_03_structure.scss */
-.cafe-panel-bg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 540px;
-  height: 220px;
+.cafe-panel-bg1 {
+  width: 360px;
+  height: 85px;
+  margin: 45px 0 0 280px;
   background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/c7.png") no-repeat;
+}
+
+/* line 258, ../sass/partials/_03_structure.scss */
+.cafe-panel-bg2 {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/c8.png") no-repeat;
   z-index: -10;
 }
 
-/* line 262, ../sass/partials/_03_structure.scss */
+/* line 269, ../sass/partials/_03_structure.scss */
 .cafe-panel-table td:first-child {
   padding-right: 3em;
 }
 
-/* line 269, ../sass/partials/_03_structure.scss */
+/* line 276, ../sass/partials/_03_structure.scss */
 .kidsroom-panel-image {
   float: right;
   width: 280px;
   margin-left: 30px;
 }
-/* line 273, ../sass/partials/_03_structure.scss */
+/* line 280, ../sass/partials/_03_structure.scss */
 .kidsroom-panel-image span {
   float: left;
 }
 
-/* line 280, ../sass/partials/_03_structure.scss */
+/* line 285, ../sass/partials/_03_structure.scss */
+.kidsroom-panel-text {
+  height: 356px;
+}
+
+/* line 291, ../sass/partials/_03_structure.scss */
 .glass-panel-text1 {
   float: left;
   width: 424px;
   margin-right: 30px;
 }
 
-/* line 288, ../sass/partials/_03_structure.scss */
+/* line 299, ../sass/partials/_03_structure.scss */
 .glass-panel-table1 td:first-child, .glass-panel-table2 td:first-child, .access-panel-table td:first-child {
   padding-right: 1em;
 }
 
-/* line 294, ../sass/partials/_03_structure.scss */
+/* line 305, ../sass/partials/_03_structure.scss */
 .glass-panel-text2 {
   float: left;
   width: 424px;
 }
 
-/* line 299, ../sass/partials/_03_structure.scss */
+/* line 310, ../sass/partials/_03_structure.scss */
 .glass-panel-element {
   float: left;
   width: 424px;
@@ -565,49 +578,49 @@ h1 a {
   background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/g6.png") 37px 0px no-repeat;
 }
 
-/* line 306, ../sass/partials/_03_structure.scss */
+/* line 317, ../sass/partials/_03_structure.scss */
 .glass-panel-text3 {
   clear: left;
 }
 
-/* line 310, ../sass/partials/_03_structure.scss */
+/* line 321, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 {
   width: 100%;
   text-align: center;
 }
-/* line 313, ../sass/partials/_03_structure.scss */
+/* line 324, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 caption {
   border: solid 1px grey;
   border-bottom: none;
   background: #f5f5f5;
 }
-/* line 318, ../sass/partials/_03_structure.scss */
+/* line 329, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 tr {
   height: 2em;
 }
-/* line 320, ../sass/partials/_03_structure.scss */
+/* line 331, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 tr th, .glass-panel-table3 tr td {
   width: 146px;
   height: 5em;
   border: solid 1px grey;
 }
-/* line 325, ../sass/partials/_03_structure.scss */
+/* line 336, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 tr th {
   background: #fafafa;
 }
 
-/* line 331, ../sass/partials/_03_structure.scss */
+/* line 342, ../sass/partials/_03_structure.scss */
 .glass-panel-image {
   float: left;
   width: 250px;
   margin-right: 30px;
 }
-/* line 335, ../sass/partials/_03_structure.scss */
+/* line 346, ../sass/partials/_03_structure.scss */
 .glass-panel-image span {
   float: left;
   border: solid 1px grey;
 }
-/* line 338, ../sass/partials/_03_structure.scss */
+/* line 349, ../sass/partials/_03_structure.scss */
 .glass-panel-image span:last-child {
   display: block;
   width: 122px;
@@ -615,7 +628,7 @@ h1 a {
   border: none;
   background: #4aa2f2;
 }
-/* line 345, ../sass/partials/_03_structure.scss */
+/* line 356, ../sass/partials/_03_structure.scss */
 .glass-panel-image span a {
   display: block;
   width: 100%;
@@ -625,13 +638,13 @@ h1 a {
   color: white;
 }
 
-/* line 356, ../sass/partials/_03_structure.scss */
+/* line 367, ../sass/partials/_03_structure.scss */
 .glass-panel-text4 {
   float: left;
   width: 598px;
 }
 
-/* line 363, ../sass/partials/_03_structure.scss */
+/* line 374, ../sass/partials/_03_structure.scss */
 .access-panel-image {
   position: relative;
   float: right;
@@ -639,7 +652,7 @@ h1 a {
   margin-left: 30px;
 }
 
-/* line 370, ../sass/partials/_03_structure.scss */
+/* line 381, ../sass/partials/_03_structure.scss */
 .google-map-overlay {
   position: absolute;
   top: 0;
@@ -648,7 +661,21 @@ h1 a {
   height: 100%;
 }
 
-/* line 380, ../sass/partials/_03_structure.scss */
+/* line 391, ../sass/partials/_03_structure.scss */
+#contact-panel {
+  margin-bottom: -110px;
+}
+
+/* line 397, ../sass/partials/_03_structure.scss */
+.footer-element {
+  display: block;
+  width: 1022px;
+  height: 240px;
+  margin: 0 auto;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/f1.png") no-repeat;
+}
+
+/* line 405, ../sass/partials/_03_structure.scss */
 article > footer {
   width: 100%;
   height: 50px;
@@ -657,67 +684,86 @@ article > footer {
   vertical-align: middle;
   border-top: dashed 1px #ddd;
 }
+/* line 412, ../sass/partials/_03_structure.scss */
+article > footer p {
+  margin: 14px 0 12px;
+  line-height: 26px;
+}
 
-/* line 391, ../sass/partials/_03_structure.scss */
+/* line 418, ../sass/partials/_03_structure.scss */
+.footer-icon-fb {
+  float: right;
+  width: 32px;
+  height: 32px;
+  margin: 9px 0;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/f2.png") no-repeat;
+}
+/* line 424, ../sass/partials/_03_structure.scss */
+.footer-icon-fb:hover {
+  -webkit-filter: brightness(125%);
+  filter: brightness(125%);
+}
+
+/* line 431, ../sass/partials/_03_structure.scss */
 .mt0 {
   margin-top: 0;
 }
 
-/* line 395, ../sass/partials/_03_structure.scss */
+/* line 435, ../sass/partials/_03_structure.scss */
 .mb0 {
   margin-bottom: 0;
 }
 
-/* line 399, ../sass/partials/_03_structure.scss */
+/* line 439, ../sass/partials/_03_structure.scss */
 .mb6 {
   margin-bottom: 6px;
 }
 
-/* line 403, ../sass/partials/_03_structure.scss */
+/* line 443, ../sass/partials/_03_structure.scss */
 .mb50 {
   margin-bottom: 50px;
 }
 
-/* line 407, ../sass/partials/_03_structure.scss */
+/* line 447, ../sass/partials/_03_structure.scss */
 .mb65 {
   margin-bottom: 65px;
 }
 
-/* line 411, ../sass/partials/_03_structure.scss */
+/* line 451, ../sass/partials/_03_structure.scss */
 .mb130 {
   margin-bottom: 130px;
 }
 
-/* line 415, ../sass/partials/_03_structure.scss */
+/* line 455, ../sass/partials/_03_structure.scss */
 .mr6 {
   margin-right: 6px;
 }
 
-/* line 419, ../sass/partials/_03_structure.scss */
+/* line 459, ../sass/partials/_03_structure.scss */
 .mr22 {
   margin-right: 22px;
 }
 
-/* line 423, ../sass/partials/_03_structure.scss */
+/* line 463, ../sass/partials/_03_structure.scss */
 .pl0 {
   padding-left: 0;
 }
 
-/* line 427, ../sass/partials/_03_structure.scss */
+/* line 467, ../sass/partials/_03_structure.scss */
 .ls-c {
   list-style: circle;
 }
 
-/* line 431, ../sass/partials/_03_structure.scss */
+/* line 471, ../sass/partials/_03_structure.scss */
 .ls-n {
   list-style: none;
 }
 
-/* line 435, ../sass/partials/_03_structure.scss */
+/* line 475, ../sass/partials/_03_structure.scss */
 .ls-rice {
   list-style: none;
 }
-/* line 437, ../sass/partials/_03_structure.scss */
+/* line 477, ../sass/partials/_03_structure.scss */
 .ls-rice:before {
   content: "※";
   position: absolute;
@@ -725,17 +771,17 @@ article > footer {
   line-height: 1.6em;
 }
 
-/* line 445, ../sass/partials/_03_structure.scss */
+/* line 485, ../sass/partials/_03_structure.scss */
 .ls-fix20 {
   padding-left: 20px;
 }
 
-/* line 449, ../sass/partials/_03_structure.scss */
+/* line 489, ../sass/partials/_03_structure.scss */
 .ls-fix300 {
   padding-left: 300px;
 }
 
-/* line 453, ../sass/partials/_03_structure.scss */
+/* line 493, ../sass/partials/_03_structure.scss */
 .link-button {
   border-bottom: dashed 1px;
   -moz-transition: all 0.1s ease-in-out;
@@ -743,13 +789,13 @@ article > footer {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 456, ../sass/partials/_03_structure.scss */
+/* line 496, ../sass/partials/_03_structure.scss */
 .link-button:hover {
   border-color: #4aa2f2;
   color: #4aa2f2;
 }
 
-/* line 462, ../sass/partials/_03_structure.scss */
+/* line 502, ../sass/partials/_03_structure.scss */
 .cf {
   overflow: hidden;
   *zoom: 1;

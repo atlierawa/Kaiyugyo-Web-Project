@@ -248,13 +248,20 @@ h1 {
   }
 }
 
-.cafe-panel-bg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 540px;
-  height: 220px;
+.cafe-panel-bg1 {
+  width: 360px;
+  height: 85px;
+  margin: 45px 0 0 280px;
   background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/c7.png") no-repeat;
+}
+
+.cafe-panel-bg2 {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/c8.png") no-repeat;
   z-index: -10;
 }
 
@@ -273,6 +280,10 @@ h1 {
   span {
     float: left;
   }
+}
+
+.kidsroom-panel-text {
+  height: 356px;
 }
 
 // Glass panel
@@ -375,7 +386,21 @@ h1 {
   height: 100%; 
 }
 
+// Contact panel
+
+#contact-panel {
+  margin-bottom: -110px;
+}
+
 // Footer
+
+.footer-element {
+  display: block;
+  width: 1022px;
+  height: 240px;
+  margin: 0 auto;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/f1.png") no-repeat;  
+}
 
 article > footer {
   width: 100%;
@@ -384,6 +409,21 @@ article > footer {
   background: #cfdce5;
   vertical-align: middle;
   border-top: dashed 1px #ddd;
+  p {
+    margin: 14px 0 12px;
+    line-height: 26px;
+  }
+}
+
+.footer-icon-fb {
+  float: right;
+  width: 32px;
+  height: 32px;
+  margin: 9px 0;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/f2.png") no-repeat;    
+  &:hover {
+    @include filter(brightness(125%));
+  }
 }
 
 // Widgets
