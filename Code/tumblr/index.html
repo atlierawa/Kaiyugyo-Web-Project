@@ -57,7 +57,7 @@
     </nav>
   </header>
 
-  {block:SearchPage}<--{/block:SearchPage}
+  {block:SearchPage}<!--{/block:SearchPage}
   {block:TagPage}<!--{/block:TagPage}
   {block:IndexPage}
 
@@ -84,18 +84,17 @@
   <section id="intro-panel" class="panel mb130">
     <h2 class="mt0">開業の経緯</h2>
     <p>海とモノづくりとガウディが大好きな店主が、<br />高校3年生の時に「いつか海の見える所でガラス制作と料理をして暮らしたい☆」と願い<br />岡山県倉敷の芸術大学に進学、ガラス制作を専攻。<br /><br />その後、東京へ戻りエコール辻フランス・イタリア料理専門カレッジで料理について学ぶ。<br />卒業後は調理の仕事の合間にレンタルスタジオにて宙吹きガラスを制作する日々を送る。<br />そんな時たまたま目にした雑誌「自休自足」で、この場所に出会い一目惚れ。<br /><br />元々建っていた古民家を、自らタイル張り、ペンキ塗り、左官などを行ってリフォーム。<br />2008年7月20日  海の日  に「Cafe海遊魚」をひっそりとオープン。<br /><br />2年後、ガウディ風の母屋とカフェ入口＆ショップを大工さんや仲間と共に増築。<br />オープンから6年&hellip; 念願のガラス工房が完成！！<br />晴れて「Cafe&amp;ガラス工房  海遊魚」になりました。</p>
-  </section>
-
-  <section id="nav-panel" class="panel mb130">
-    <section class="nav-panel-contents cf">
-      <img src="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i02-3.jpg" alt="" title="" id="nav-panel-base" />
-      <a href="#cafe" class="ancher-scroll nav-panel-link nav-panel-cf" title="カフェ">カフェ</a>
-      <a href="#kidsroom" class="ancher-scroll nav-panel-link nav-panel-kr" title="キッズルーム">キッズルーム</a>
-      <a href="#glass" class="ancher-scroll nav-panel-link nav-panel-gs" title="ガラス工房">ガラス工房</a>
+    <section id="nav-panel" class="panel mb130">
+      <section class="nav-panel-contents cf">
+  <!--      <img src="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i02-3.jpg" alt="" title="" id="nav-panel-base" />-->
+        <a href="#cafe" class="ancher-scroll nav-panel-link nav-panel-cf" title="カフェ">カフェ</a>
+        <a href="#kidsroom" class="ancher-scroll nav-panel-link nav-panel-kr" title="キッズルーム">キッズルーム</a>
+        <a href="#glass" class="ancher-scroll nav-panel-link nav-panel-gs" title="ガラス工房">ガラス工房</a>
+      </section>
+      <footer class="panel-footer">
+        <a href="#top-ancher" class="link-button font-small">最初に戻る</a>
+      </footer>
     </section>
-    <footer class="panel-footer">
-      <a href="#top-ancher" class="link-button font-small">最初に戻る</a>
-    </footer>
   </section>
 
   <section id="cafe-panel" class="panel mb130">
@@ -443,20 +442,15 @@ $(window).on('load',function(){
 <script type="text/javascript"> // Smooth scrolling effect
 $(function() {
   $('.ancher-scroll').click(function(){
-//    if((window.location.href == {JSBlogURL}) || window.location.hash){
+    if((window.location.href == {JSBlogURL}) || window.location.hash){
       var i = $(this).attr('href');
       var j = $(i).offset().top;
-      if ($(this).hasClass('panel-scroll')){
-        $('html,body').animate({scrollTop:j},'fast');
-      } else {
-        $('html,body').animate({scrollTop:j},'slow');
-      }
-    return false;
-//    }
-  });
-  $('.top-scroll').click(function(){
-    $('html,body').animate({scrollTop:0},'slow');
-    return false;
+      $('html,body').animate({scrollTop:j},'slow');
+      return false;
+    } else {
+      var k = {JSBlogURL} + $(this).attr('href');
+      window.location.href = k;
+    }
   });
 });
 </script>
