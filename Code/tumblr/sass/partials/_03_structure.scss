@@ -142,24 +142,16 @@ h1 {
 // Intro panel
 
 #intro-panel {
-  height: 515px;
-  padding: 100px 0 0;
-  text-align: center;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/i1.png") 20px 0 no-repeat;
-}
-
-// Nav panel
-
-.nav-panel-contents {
-  position: relative;
   width: 100%;
+  height: 1031px;
+  padding-top: 100px;
+  text-align: center;
+  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/i1.png") 0 0 no-repeat;
 }
 
-//#nav-panel-base {
-//  display: block;
-//  margin: 0 auto;
-//  padding: 0;
-//}
+.nav-base {
+  height: 100%
+}
 
 .nav-panel-link {
   position: absolute;
@@ -172,33 +164,18 @@ h1 {
 }
 
 .nav-panel-cf {
-  top: 0;
-  left: 57px;
+  top: 535px;
+  left: 120px;
 }
 
 .nav-panel-kr {
-  top: 0;
-  right: 57px;
+  top: 535px;
+  right: 140px;
 }
 
 .nav-panel-gs {
-  top: 138px;
-  right: 57px;
-}
-
-.nav-panel-pk {
-  top: 349px;
-  left: 57px;
-}
-
-#nav-panel-swing {
-  float: left;
-  width: 242px;
-  margin: 0 0 0 181px;
-}
-
-#nav-panel-text {
-  text-align: left;
+  top: 671px;
+  right: 140px;
 }
 
 // Cafe panel
