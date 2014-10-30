@@ -132,6 +132,9 @@ h1 {
   margin: 0;
   a {
     display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i02-1.jpg") no-repeat;
@@ -478,4 +481,11 @@ article > footer {
 
 .cf {
   @include clearfix;
+}
+
+//.pie {
+//  @include pie-element(relative);
+//}
+.pie {
+  behavier: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/PIE.htc")
 }
