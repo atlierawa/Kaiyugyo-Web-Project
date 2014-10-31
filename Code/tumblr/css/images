@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* line 64, ../img/i01_banner/*.png */
+.i01_banner-sprite, .i01_banner-c0, .i01_banner-g0, .i01_banner-k0 {
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i01_banner-s948644e46a.png');
+  background-repeat: no-repeat;
+}
+
+/* line 80, ../img/i03-2_cafe/*.png */
+.i03-2_cafe-sprite, .i03-2_cafe-c2, .i03-2_cafe-c3, .i03-2_cafe-c4, .i03-2_cafe-c5, .i03-2_cafe-c6 {
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i03-2_cafe-sc7f5422289.png');
+  background-repeat: no-repeat;
+}
+
+/* line 56, ../img/i04_kidsroom/*.png */
+.i04_kidsroom-sprite, .i04_kidsroom-k1, .i04_kidsroom-k2 {
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i04_kidsroom-sf7663e8820.png');
+  background-repeat: no-repeat;
+}
+
+/* line 56, ../img/i05-1_glass/*.png */
+.i05-1_glass-sprite, .i05-1_glass-g1, .i05-1_glass-g2 {
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i05-1_glass-s9f676b4c39.png');
+  background-repeat: no-repeat;
+}
+
+/* line 64, ../img/i05-2_glass/*.png */
+.i05-2_glass-sprite, .i05-2_glass-g3, .i05-2_glass-g4, .i05-2_glass-g5 {
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i05-2_glass-sab078089f4.png');
+  background-repeat: no-repeat;
+}

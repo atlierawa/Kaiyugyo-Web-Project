@@ -69,7 +69,21 @@ textarea {
 }
 
 #ss-submit {
+  position: relative;
   display: block;
   margin: 0 auto;
+  color: white;
+  background: #ba429b;
+  border-color: #ba429b;
   -webkit-appearance: none;
+  @include border-bottom-radius(3px);
+  @include box-shadow(0 4px darken(#ba429b,15%));
+  &:hover {
+    top: 1px;
+    @include box-shadow(0 3px darken(#ba429b,15%));
+  }
+  &:active {
+    top: 4px;
+    @include box-shadow(0 0 darken(#ba429b,15%));
+  }
 }

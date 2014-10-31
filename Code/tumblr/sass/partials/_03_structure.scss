@@ -215,7 +215,7 @@ h1 {
       display: block;
       width: 122px;
       height: 110px;
-      background: #ba429b;
+      border: solid 1px #ba429b;
     }
     a {
       display: block;
@@ -223,7 +223,12 @@ h1 {
       height: 100%;
       padding: 30% 5%;
       text-align: center;
-      color: white;
+      color: #ba429b;
+      @include transition(all 0.1s ease-in-out);
+      &:hover {
+        background: #ba429b;
+        color: white;
+      }
     }
   }
 }
@@ -330,8 +335,7 @@ h1 {
       display: block;
       width: 122px;
       height: 122px;
-      border: none;
-      background: #4aa2f2;
+      border: solid 1px #4aa2f2;
     }
     a {
       display: block;
@@ -340,6 +344,12 @@ h1 {
       padding: 33% 15%;
       text-align: center;
       color: white;
+      color: #4aa2f2;
+      @include transition(all 0.1s ease-in-out);
+      &:hover {
+        background: #4aa2f2;
+        color: white;
+      }
     }
   }
 }
