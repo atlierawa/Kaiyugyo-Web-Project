@@ -855,16 +855,29 @@ textarea {
   border-top: solid 6px #fafafa;
 }
 
-/* line 49, ../sass/partials/_04_contact-form.scss */
+/* line 48, ../sass/partials/_04_contact-form.scss */
+.formtest-inside {
+  overflow: hidden;
+  height: 100%;
+  padding: 0 3px;
+}
+
+/* line 54, ../sass/partials/_04_contact-form.scss */
+.sent-message {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 60, ../sass/partials/_04_contact-form.scss */
 .panel-form-subject > ul li {
   margin-bottom: 8px;
 }
-/* line 51, ../sass/partials/_04_contact-form.scss */
+/* line 62, ../sass/partials/_04_contact-form.scss */
 .panel-form-subject > ul li:last-child {
   margin-bottom: 0;
 }
 
-/* line 57, ../sass/partials/_04_contact-form.scss */
+/* line 68, ../sass/partials/_04_contact-form.scss */
 .panel-form-name, .panel-form-email, .panel-form-number {
   position: relative;
   width: 260px;
@@ -872,7 +885,7 @@ textarea {
   -webkit-appearance: none;
 }
 
-/* line 64, ../sass/partials/_04_contact-form.scss */
+/* line 75, ../sass/partials/_04_contact-form.scss */
 .panel-form-text {
   position: relative;
   width: 390px;
@@ -880,12 +893,11 @@ textarea {
   -webkit-appearance: none;
 }
 
-/* line 71, ../sass/partials/_04_contact-form.scss */
+/* line 82, ../sass/partials/_04_contact-form.scss */
 #ss-submit {
   position: relative;
   display: block;
   margin: 0 auto;
-  color: white;
   background: #ba429b;
   border-color: #ba429b;
   -webkit-appearance: none;
@@ -895,21 +907,114 @@ textarea {
   -moz-border-radius-bottomright: 3px;
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+
+/* line 92, ../sass/partials/_04_contact-form.scss */
+.click-on {
+  color: white;
   -moz-box-shadow: 0 4px #822e6c;
   -webkit-box-shadow: 0 4px #822e6c;
   box-shadow: 0 4px #822e6c;
 }
-/* line 81, ../sass/partials/_04_contact-form.scss */
-#ss-submit:hover {
+/* line 95, ../sass/partials/_04_contact-form.scss */
+.click-on:hover {
   top: 1px;
   -moz-box-shadow: 0 3px #822e6c;
   -webkit-box-shadow: 0 3px #822e6c;
   box-shadow: 0 3px #822e6c;
 }
-/* line 85, ../sass/partials/_04_contact-form.scss */
-#ss-submit:active {
+/* line 99, ../sass/partials/_04_contact-form.scss */
+.click-on:active {
   top: 4px;
   -moz-box-shadow: 0 0 #822e6c;
   -webkit-box-shadow: 0 0 #822e6c;
   box-shadow: 0 0 #822e6c;
+}
+
+/* line 105, ../sass/partials/_04_contact-form.scss */
+.click-off {
+  color: #822e6c;
+  top: 4px;
+  -moz-box-shadow: 0 0 #822e6c;
+  -webkit-box-shadow: 0 0 #822e6c;
+  box-shadow: 0 0 #822e6c;
+}
+
+@-moz-keyframes lilshake {
+  0%, 100% {
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+  17%, 50%, 83% {
+    -moz-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  33%, 67% {
+    -moz-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+@-webkit-keyframes lilshake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  17%, 50%, 83% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  33%, 67% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+@keyframes lilshake {
+  0%, 100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  17%, 50%, 83% {
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  33%, 67% {
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+/* line 117, ../sass/partials/_04_contact-form.scss */
+.click-shake {
+  -moz-animation-name: lilshake;
+  -webkit-animation-name: lilshake;
+  animation-name: lilshake;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+/* line 122, ../sass/partials/_04_contact-form.scss */
+.form-warning {
+  border-color: red;
+}
+/* line 61, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+.form-warning:-moz-placeholder {
+  color: red;
+}
+/* line 64, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+.form-warning::-moz-placeholder {
+  color: red;
+}
+/* line 67, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+.form-warning:-ms-input-placeholder {
+  color: red;
+}
+/* line 56, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+.form-warning::-webkit-input-placeholder {
+  color: red;
 }

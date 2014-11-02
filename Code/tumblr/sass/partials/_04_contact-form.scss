@@ -45,6 +45,17 @@ textarea {
   }
 }
 
+.formtest-inside {
+  overflow: hidden;
+  height: 100%;
+  padding: 0 3px;
+}
+
+.sent-message {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .panel-form-subject > ul {
   li {
     margin-bottom: 8px;
@@ -72,11 +83,14 @@ textarea {
   position: relative;
   display: block;
   margin: 0 auto;
-  color: white;
   background: #ba429b;
   border-color: #ba429b;
   -webkit-appearance: none;
   @include border-bottom-radius(3px);
+}
+
+.click-on {
+  color: white;
   @include box-shadow(0 4px darken(#ba429b,15%));
   &:hover {
     top: 1px;
@@ -85,5 +99,29 @@ textarea {
   &:active {
     top: 4px;
     @include box-shadow(0 0 darken(#ba429b,15%));
+  }
+}
+
+.click-off {
+  color: darken(#ba429b,15%);
+  top: 4px;
+  @include box-shadow(0 0 darken(#ba429b,15%));
+}
+
+@include keyframes(lilshake) {
+  0%, 100% {@include transform(translateX(0));}
+  17%, 50%, 83% {@include transform(translateX(-5px));}
+  33%, 67% {@include transform(translateX(5px));}
+}
+
+.click-shake {
+  @include animation-name(lilshake);
+  @include animation-duration(0.5s);
+}
+
+.form-warning {
+  border-color: red;
+  @include input-placeholder {
+    color: red;
   }
 }
