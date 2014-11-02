@@ -52,8 +52,8 @@
       <a href="#access" class="ancher-scroll" title="アクセス">アクセス</a>
       <a href="#contact" id="" class="ancher-scroll" title="お問い合わせ">お問い合わせ</a>
       <a href="{BlogURL}tagged/写真" title="写真">写真</a>
-      <a href="" title="ブログ">リンク</a>
-      <a href="http://ainoaino.exblog.jp" title="リンク" target="_blank">ブログ</a>
+      <a href="{BlogURL}links" title="リンク">リンク</a>
+      <a href="http://ainoaino.exblog.jp" title="ブログ" target="_blank">ブログ</a>
     </nav>
   </header>
 
@@ -374,18 +374,21 @@
   {block:SearchPage}-->{/block:SearchPage}
 
   {block:PermalinkPage}
-  <section id="" class="mb130">
+  <section id="" class="panel mb130">
     {block:Posts}
     {block:Text}
-    {block:Title}<h2>{Title}</h2>{/block:Title}
-    {Body}
+    <section>
+      {block:Title}<h2 class="tag-name mb50">{Title}</h2>{/block:Title}
+      {Body}
+      <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+    </section>
     {/block:Text}
 
     {block:Photo}
-    <section id="" class="mb50">
-    {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
-    {block:Caption}<p>{Caption}</p>{block:Caption}
-    {block:Date}<span>{Year}&nbsp;/&nbsp;{MonthNumber}&nbsp;/&nbsp;{DayOfMonthWithZero}</span>{/block:Date}
+    <section>
+      {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
+      {block:Caption}{Caption}{block:Caption}
+      <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
     </section>
     {/block:Photo}
     {/block:Posts}  
@@ -393,30 +396,39 @@
   {/block:PermalinkPage}
 
   {block:TagPage}
-  <section id="" class="{TagsAsClasses} mb130">
-    <ol>
-      <h2>{Tag}</h2>
-      {block:Posts}
+  <section id="" class="{TagsAsClasses} panel mb130">
+    <h2 class="tag-name mb50">{Tag}</h2>
+    <ol class="pl0">
+    {block:Posts}
       {block:Text}
-      <section id="" class="mb50">
-      {block:Title}<h4>{Title}</h4>{/block:Title}
-      {Body}
-      </section>
+      <li class="ls-n mb130">
+        <section>
+          {block:Title}<h3>{Title}</h3>{/block:Title}
+          {Body}
+          <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+        </section>
+      </li>
       {/block:Text}
 
       {block:Photo}
-      <li><img src="{PhotoURL-400}" alt="{PhotoAlt}" /></li>
+      <li class="ls-n mb130">
+        <section>
+          <img src="{PhotoURL-400}" alt="{PhotoAlt}" />
+          {block:Caption}{Caption}{/block:Caption}
+          <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
+        </section>
+      </li>
       {/block:Photo}
+    {/block:Posts}
     </ol>
     
     {block:Pagination}
     <footer class="pagination">
-      {block:PreviousPage}<a href="{PreviousPage}" class="page-linker page-previous" title="Previous">&lt;&lt;&nbsp;Previous</a>{/block:PreviousPage}
-      {block:NextPage}<a href="{NextPage}" class="page-linker page-next" title="Next">Next&nbsp;&gt;&gt;</a>{/block:NextPage}
+      {block:PreviousPage}<a href="{PreviousPage}" class="page-linker page-previous" title="Previous">&larr;&nbsp;前へ</a>{/block:PreviousPage}
+      {block:NextPage}<a href="{NextPage}" class="page-linker page-next" title="Next">後へ&nbsp;&rarr;</a>{/block:NextPage}
       <span class="page-count">{CurrentPage}&nbsp;/&nbsp;{TotalPages}</span>
     </footer>
     {/block:Pagination}
-    {/block:Posts}
   </section>
   {/block:TagPage}
 

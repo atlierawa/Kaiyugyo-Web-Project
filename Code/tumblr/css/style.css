@@ -792,12 +792,58 @@ article > footer p {
 }
 
 /* line 492, ../sass/partials/_03_structure.scss */
+.page-previous {
+  position: absolute;
+  left: 400px;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 496, ../sass/partials/_03_structure.scss */
+.page-previous:hover {
+  color: #ba429b;
+}
+
+/* line 501, ../sass/partials/_03_structure.scss */
+.page-next {
+  position: absolute;
+  right: 400px;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 505, ../sass/partials/_03_structure.scss */
+.page-next:hover {
+  color: #ba429b;
+}
+
+/* line 510, ../sass/partials/_03_structure.scss */
+.page-count {
+  display: block;
+  text-align: center;
+}
+
+/* line 515, ../sass/partials/_03_structure.scss */
+.tag-name {
+  text-align: center;
+}
+
+/* line 519, ../sass/partials/_03_structure.scss */
+.post-date {
+  font-style: italic;
+  font-size: 13px;
+  color: grey;
+}
+
+/* line 525, ../sass/partials/_03_structure.scss */
 .cf {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 499, ../sass/partials/_03_structure.scss */
+/* line 532, ../sass/partials/_03_structure.scss */
 .pie {
   behavier: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/PIE.htc");
 }
