@@ -1,3 +1,7 @@
+// JSLint settings
+/*global $, jQuery, alert*/
+/*jslint plusplus: true*/
+
 // Contact form checker
 
 function checkForm() {
@@ -32,3 +36,68 @@ function checkForm() {
   }
   return status;
 }
+
+// Recent posts
+
+(function ($) {
+  'use strict';
+  $.fn.tagListGen = function () {
+    var $this = null,
+      titles = [],
+      titlesList = [],
+      post_urls = [],
+      post_urlsList = [],
+      url = 'atsushioho.tumblr.com',
+      key = 'IXFjOnZNoyT1rq6jbXMrh5ILAfEvtS7ajQwnJ1dzkJqpJWG0MW';
+      latest = '&tag=お休み';
+      closed = '&tag=お休み';
+
+    function renderData() {
+      $this.empty();
+      $.each(titlesList, function (idx, t) {
+        $this.append(
+          $('<a>').attr({
+            'href': ,
+            'title': t.original
+          })
+            .html('#' + t.original + '&nbsp;&nbsp;&nbsp;')
+        );
+      });
+    }
+
+    function processResponse(data) {
+      var i;
+      $this.empty();
+      $.each(data.response.posts, function (idx, post) {
+        if (post.title && post.title.length) {
+          for (i = 0; i < 2; i++) {
+            titles = post.title[i];
+            post_urls = post.post_url[i];
+            titlesList.push({
+              count: 1,
+              original: post.title[i]
+            });
+            post_urlsList.push({
+              count: 1,
+              original: post.urls[i]
+            });
+          }
+        }
+      });
+      renderData();
+    }
+
+    function requestData() {
+      $.ajax({
+        url: 'http://api.tumblr.com/v2/blog/' + url + '/posts?api_key=' + key + latest,
+        dataType: 'JSONP',
+        success: processResponse
+      });
+    }
+
+    return this.each(function () {
+      $this = $(this);
+      requestData();
+    });
+  };
+}(jQuery));
