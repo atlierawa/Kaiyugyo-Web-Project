@@ -41,55 +41,60 @@ function checkForm() {
 
 (function ($) {
   'use strict';
-  $.fn.tagListGen = function () {
+  $.fn.notifyGen = function () {
     var $this = null,
-      titles = [],
-      titlesList = [],
-      post_urls = [],
-      post_urlsList = [],
-      url = 'atsushioho.tumblr.com',
-      key = 'IXFjOnZNoyT1rq6jbXMrh5ILAfEvtS7ajQwnJ1dzkJqpJWG0MW';
-      latest = '&tag=お休み';
-      closed = '&tag=お休み';
+      tag = '',
+      nesting = '',
+      date = '',
+      title = '',
+      post_url = '',
+      dataList = [],
+      url = 'cafe-kaiyuugyo.jp',
+      key = 'Wb56LYSYz4N9xAm21f2X7xeVCkoygaRMyeBYSh3pFC7FaSXdE8';
 
     function renderData() {
       $this.empty();
-      $.each(titlesList, function (idx, t) {
-        $this.append(
+      $.each(dataList, function (idx, a) {
+        nesting = $('<li>').append(
           $('<a>').attr({
-            'href': ,
-            'title': t.original
+            'href': a.url,
+            'title': a.title
           })
-            .html('#' + t.original + '&nbsp;&nbsp;&nbsp;')
+            .html(a.date + '&nbsp;' + '-' + '&nbsp' + a.title)
         );
+        $this.append(nesting);
       });
     }
 
     function processResponse(data) {
       var i;
       $this.empty();
-      $.each(data.response.posts, function (idx, post) {
-        if (post.title && post.title.length) {
-          for (i = 0; i < 2; i++) {
-            titles = post.title[i];
-            post_urls = post.post_url[i];
-            titlesList.push({
-              count: 1,
-              original: post.title[i]
-            });
-            post_urlsList.push({
-              count: 1,
-              original: post.urls[i]
-            });
-          }
-        }
-      });
-      renderData();
+      if (data.response.total_posts === 0) {
+        $this.append($('<li>お知らせはありません</li>'));
+      } else {
+        $.each(data.response.posts, function (idx, post) {
+          date = post.date.substr(5, 5).replace('-', '/');
+          title = post.title;
+          post_url = post.post_url;
+          dataList.push({
+            date: date,
+            title: title,
+            url: post_url
+          });
+        });
+        renderData();
+      }
     }
 
     function requestData() {
+      $this.empty();
+      if ($this.attr('id') === 'notify-latest') {
+        tag = '&tag=お知らせ';
+      } else if ($this.attr('id') === 'notify-closed') {
+        tag = '&tag=お休み';
+      }
       $.ajax({
-        url: 'http://api.tumblr.com/v2/blog/' + url + '/posts?api_key=' + key + latest,
+        url: 'http://api.tumblr.com/v2/blog/' + url + '/posts?api_key=' + key + '&limit=2' + tag,
         dataType: 'JSONP',
         success: processResponse
       });
