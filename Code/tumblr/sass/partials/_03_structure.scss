@@ -213,14 +213,14 @@ nav {
 
 .cafe-panel-image2 {
   float: left;
-  width: 250px;
+  width: 262px;
   margin-right: 30px;
   span {
     float: left;
     &:last-child {
       display: block;
-      width: 122px;
-      height: 110px;
+      width: 128px;
+      height: 116px;
       border: solid 1px #ba429b;
     }
     a {
@@ -239,16 +239,9 @@ nav {
   }
 }
 
-.cafe-panel-bg1 {
-  width: 360px;
-  height: 85px;
-  margin: 45px 0 0 280px;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/c7.png") no-repeat;
-}
-
-.cafe-panel-bg2 {
+.cafe-panel-bg {
   position: absolute;
-  bottom: 50px;
+  bottom: 0;
   right: 0;
   width: 180px;
   height: 180px;

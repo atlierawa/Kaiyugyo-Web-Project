@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /* line 64, ../img/i01_banner/*.png */
 .i01_banner-sprite, .i01_banner-c0, .i01_banner-g0, .i01_banner-k0 {
-  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i01_banner-s948644e46a.png');
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i01_banner-s9ac8fb2522.png');
   background-repeat: no-repeat;
 }
 
 /* line 80, ../img/i03-2_cafe/*.png */
 .i03-2_cafe-sprite, .i03-2_cafe-c2, .i03-2_cafe-c3, .i03-2_cafe-c4, .i03-2_cafe-c5, .i03-2_cafe-c6 {
-  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i03-2_cafe-sc7f5422289.png');
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i03-2_cafe-s930e9049bc.png');
   background-repeat: no-repeat;
 }
 
@@ -51,22 +51,22 @@
 
 /* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .i03-2_cafe-c3 {
-  background-position: 0 -110px;
+  background-position: 0 -116px;
 }
 
 /* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .i03-2_cafe-c4 {
-  background-position: 0 -220px;
+  background-position: 0 -232px;
 }
 
 /* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .i03-2_cafe-c5 {
-  background-position: 0 -330px;
+  background-position: 0 -348px;
 }
 
 /* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .i03-2_cafe-c6 {
-  background-position: 0 -440px;
+  background-position: 0 -464px;
 }
 
 /* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
@@ -119,8 +119,8 @@
 
 /* line 32, ../sass/partials/_01_sprites.scss */
 .i03-2_cafe-sprite, .i03-2_cafe-c2, .i03-2_cafe-c3, .i03-2_cafe-c4, .i03-2_cafe-c5, .i03-2_cafe-c6 {
-  width: 122px;
-  height: 110px;
+  width: 128px;
+  height: 116px;
 }
 
 /* line 38, ../sass/partials/_01_sprites.scss */
@@ -476,7 +476,7 @@ nav a:hover {
 /* line 214, ../sass/partials/_03_structure.scss */
 .cafe-panel-image2 {
   float: left;
-  width: 250px;
+  width: 262px;
   margin-right: 30px;
 }
 /* line 218, ../sass/partials/_03_structure.scss */
@@ -486,8 +486,8 @@ nav a:hover {
 /* line 220, ../sass/partials/_03_structure.scss */
 .cafe-panel-image2 span:last-child {
   display: block;
-  width: 122px;
-  height: 110px;
+  width: 128px;
+  height: 116px;
   border: solid 1px #ba429b;
 }
 /* line 226, ../sass/partials/_03_structure.scss */
@@ -510,17 +510,9 @@ nav a:hover {
 }
 
 /* line 242, ../sass/partials/_03_structure.scss */
-.cafe-panel-bg1 {
-  width: 360px;
-  height: 85px;
-  margin: 45px 0 0 280px;
-  background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/c7.png") no-repeat;
-}
-
-/* line 249, ../sass/partials/_03_structure.scss */
-.cafe-panel-bg2 {
+.cafe-panel-bg {
   position: absolute;
-  bottom: 50px;
+  bottom: 0;
   right: 0;
   width: 180px;
   height: 180px;
@@ -528,46 +520,46 @@ nav a:hover {
   z-index: -10;
 }
 
-/* line 260, ../sass/partials/_03_structure.scss */
+/* line 253, ../sass/partials/_03_structure.scss */
 .cafe-panel-table td:first-child {
   padding-right: 3em;
 }
 
-/* line 267, ../sass/partials/_03_structure.scss */
+/* line 260, ../sass/partials/_03_structure.scss */
 .kidsroom-panel-image {
   float: right;
   width: 280px;
   margin-left: 30px;
 }
-/* line 271, ../sass/partials/_03_structure.scss */
+/* line 264, ../sass/partials/_03_structure.scss */
 .kidsroom-panel-image span {
   float: left;
 }
 
-/* line 276, ../sass/partials/_03_structure.scss */
+/* line 269, ../sass/partials/_03_structure.scss */
 .kidsroom-panel-text {
   height: 356px;
 }
 
-/* line 282, ../sass/partials/_03_structure.scss */
+/* line 275, ../sass/partials/_03_structure.scss */
 .glass-panel-text1 {
   float: left;
   width: 424px;
   margin-right: 30px;
 }
 
-/* line 290, ../sass/partials/_03_structure.scss */
+/* line 283, ../sass/partials/_03_structure.scss */
 .glass-panel-table1 td:first-child, .glass-panel-table2 td:first-child, .access-panel-table td:first-child {
   padding-right: 1em;
 }
 
-/* line 296, ../sass/partials/_03_structure.scss */
+/* line 289, ../sass/partials/_03_structure.scss */
 .glass-panel-text2 {
   float: left;
   width: 424px;
 }
 
-/* line 301, ../sass/partials/_03_structure.scss */
+/* line 294, ../sass/partials/_03_structure.scss */
 .glass-panel-element {
   float: left;
   width: 424px;
@@ -575,56 +567,56 @@ nav a:hover {
   background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/g6.png") 37px 0px no-repeat;
 }
 
-/* line 308, ../sass/partials/_03_structure.scss */
+/* line 301, ../sass/partials/_03_structure.scss */
 .glass-panel-text3 {
   clear: left;
 }
 
-/* line 312, ../sass/partials/_03_structure.scss */
+/* line 305, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 {
   width: 100%;
   text-align: center;
 }
-/* line 315, ../sass/partials/_03_structure.scss */
+/* line 308, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 caption {
   border: solid 1px grey;
   border-bottom: none;
   background: #f5f5f5;
 }
-/* line 320, ../sass/partials/_03_structure.scss */
+/* line 313, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 tr {
   height: 2em;
 }
-/* line 322, ../sass/partials/_03_structure.scss */
+/* line 315, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 tr th, .glass-panel-table3 tr td {
   width: 146px;
   height: 5em;
   border: solid 1px grey;
 }
-/* line 327, ../sass/partials/_03_structure.scss */
+/* line 320, ../sass/partials/_03_structure.scss */
 .glass-panel-table3 tr th {
   background: #fafafa;
 }
 
-/* line 333, ../sass/partials/_03_structure.scss */
+/* line 326, ../sass/partials/_03_structure.scss */
 .glass-panel-image {
   float: left;
   width: 250px;
   margin-right: 30px;
 }
-/* line 337, ../sass/partials/_03_structure.scss */
+/* line 330, ../sass/partials/_03_structure.scss */
 .glass-panel-image span {
   float: left;
   border: solid 1px grey;
 }
-/* line 340, ../sass/partials/_03_structure.scss */
+/* line 333, ../sass/partials/_03_structure.scss */
 .glass-panel-image span:last-child {
   display: block;
   width: 122px;
   height: 122px;
   border: solid 1px #4aa2f2;
 }
-/* line 346, ../sass/partials/_03_structure.scss */
+/* line 339, ../sass/partials/_03_structure.scss */
 .glass-panel-image span a {
   display: block;
   width: 100%;
@@ -638,19 +630,19 @@ nav a:hover {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 355, ../sass/partials/_03_structure.scss */
+/* line 348, ../sass/partials/_03_structure.scss */
 .glass-panel-image span a:hover {
   background: #4aa2f2;
   color: white;
 }
 
-/* line 363, ../sass/partials/_03_structure.scss */
+/* line 356, ../sass/partials/_03_structure.scss */
 .glass-panel-text4 {
   float: left;
   width: 598px;
 }
 
-/* line 370, ../sass/partials/_03_structure.scss */
+/* line 363, ../sass/partials/_03_structure.scss */
 .access-panel-image {
   position: relative;
   float: right;
@@ -658,7 +650,7 @@ nav a:hover {
   margin-left: 30px;
 }
 
-/* line 377, ../sass/partials/_03_structure.scss */
+/* line 370, ../sass/partials/_03_structure.scss */
 .google-map-overlay {
   position: absolute;
   top: 0;
@@ -667,12 +659,12 @@ nav a:hover {
   height: 100%;
 }
 
-/* line 387, ../sass/partials/_03_structure.scss */
+/* line 380, ../sass/partials/_03_structure.scss */
 #contact-panel {
   margin-bottom: -110px;
 }
 
-/* line 393, ../sass/partials/_03_structure.scss */
+/* line 386, ../sass/partials/_03_structure.scss */
 .footer-element {
   display: block;
   width: 1022px;
@@ -681,7 +673,7 @@ nav a:hover {
   background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/f1.png") no-repeat;
 }
 
-/* line 401, ../sass/partials/_03_structure.scss */
+/* line 394, ../sass/partials/_03_structure.scss */
 article > footer {
   width: 100%;
   height: 50px;
@@ -690,13 +682,13 @@ article > footer {
   vertical-align: middle;
   border-top: dashed 1px #ddd;
 }
-/* line 408, ../sass/partials/_03_structure.scss */
+/* line 401, ../sass/partials/_03_structure.scss */
 article > footer p {
   margin: 14px 0 12px;
   line-height: 26px;
 }
 
-/* line 414, ../sass/partials/_03_structure.scss */
+/* line 407, ../sass/partials/_03_structure.scss */
 .footer-icon-fb {
   float: right;
   width: 32px;
@@ -704,72 +696,72 @@ article > footer p {
   margin: 9px 0;
   background: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i06_elements/f2.png") no-repeat;
 }
-/* line 420, ../sass/partials/_03_structure.scss */
+/* line 413, ../sass/partials/_03_structure.scss */
 .footer-icon-fb:hover {
   -webkit-filter: brightness(125%);
   filter: brightness(125%);
 }
 
-/* line 427, ../sass/partials/_03_structure.scss */
+/* line 420, ../sass/partials/_03_structure.scss */
 .mt0 {
   margin-top: 0;
 }
 
-/* line 431, ../sass/partials/_03_structure.scss */
+/* line 424, ../sass/partials/_03_structure.scss */
 .mb0 {
   margin-bottom: 0;
 }
 
-/* line 435, ../sass/partials/_03_structure.scss */
+/* line 428, ../sass/partials/_03_structure.scss */
 .mb6 {
   margin-bottom: 6px;
 }
 
-/* line 439, ../sass/partials/_03_structure.scss */
+/* line 432, ../sass/partials/_03_structure.scss */
 .mb50 {
   margin-bottom: 50px;
 }
 
-/* line 443, ../sass/partials/_03_structure.scss */
+/* line 436, ../sass/partials/_03_structure.scss */
 .mb65 {
   margin-bottom: 65px;
 }
 
-/* line 447, ../sass/partials/_03_structure.scss */
+/* line 440, ../sass/partials/_03_structure.scss */
 .mb130 {
   margin-bottom: 130px;
 }
 
-/* line 451, ../sass/partials/_03_structure.scss */
+/* line 444, ../sass/partials/_03_structure.scss */
 .mr6 {
   margin-right: 6px;
 }
 
-/* line 455, ../sass/partials/_03_structure.scss */
+/* line 448, ../sass/partials/_03_structure.scss */
 .mr22 {
   margin-right: 22px;
 }
 
-/* line 459, ../sass/partials/_03_structure.scss */
+/* line 452, ../sass/partials/_03_structure.scss */
 .pl0 {
   padding-left: 0;
 }
 
-/* line 463, ../sass/partials/_03_structure.scss */
+/* line 456, ../sass/partials/_03_structure.scss */
 .ls-c {
   list-style: circle;
 }
 
-/* line 467, ../sass/partials/_03_structure.scss */
+/* line 460, ../sass/partials/_03_structure.scss */
 .ls-n {
   list-style: none;
 }
 
-/* line 471, ../sass/partials/_03_structure.scss */
+/* line 464, ../sass/partials/_03_structure.scss */
 .ls-rice {
   list-style: none;
 }
-/* line 473, ../sass/partials/_03_structure.scss */
+/* line 466, ../sass/partials/_03_structure.scss */
 .ls-rice:before {
   content: "※";
   position: absolute;
@@ -777,17 +769,17 @@ article > footer p {
   line-height: 1.6em;
 }
 
-/* line 481, ../sass/partials/_03_structure.scss */
+/* line 474, ../sass/partials/_03_structure.scss */
 .ls-fix20 {
   padding-left: 20px;
 }
 
-/* line 485, ../sass/partials/_03_structure.scss */
+/* line 478, ../sass/partials/_03_structure.scss */
 .ls-fix300 {
   padding-left: 300px;
 }
 
-/* line 489, ../sass/partials/_03_structure.scss */
+/* line 482, ../sass/partials/_03_structure.scss */
 .link-button {
   border-bottom: dashed 1px;
   -moz-transition: all 0.1s ease-in-out;
@@ -795,13 +787,13 @@ article > footer p {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 492, ../sass/partials/_03_structure.scss */
+/* line 485, ../sass/partials/_03_structure.scss */
 .link-button:hover {
   border-color: #4aa2f2;
   color: #4aa2f2;
 }
 
-/* line 498, ../sass/partials/_03_structure.scss */
+/* line 491, ../sass/partials/_03_structure.scss */
 .page-previous {
   position: absolute;
   left: 400px;
@@ -810,12 +802,12 @@ article > footer p {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 502, ../sass/partials/_03_structure.scss */
+/* line 495, ../sass/partials/_03_structure.scss */
 .page-previous:hover {
   color: #ba429b;
 }
 
-/* line 507, ../sass/partials/_03_structure.scss */
+/* line 500, ../sass/partials/_03_structure.scss */
 .page-next {
   position: absolute;
   right: 400px;
@@ -824,23 +816,23 @@ article > footer p {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 511, ../sass/partials/_03_structure.scss */
+/* line 504, ../sass/partials/_03_structure.scss */
 .page-next:hover {
   color: #ba429b;
 }
 
-/* line 516, ../sass/partials/_03_structure.scss */
+/* line 509, ../sass/partials/_03_structure.scss */
 .page-count {
   display: block;
   text-align: center;
 }
 
-/* line 521, ../sass/partials/_03_structure.scss */
+/* line 514, ../sass/partials/_03_structure.scss */
 .tag-name {
   text-align: center;
 }
 
-/* line 525, ../sass/partials/_03_structure.scss */
+/* line 518, ../sass/partials/_03_structure.scss */
 .post-date {
   margin-top: 21px;
   font-style: italic;
@@ -848,13 +840,13 @@ article > footer p {
   color: grey;
 }
 
-/* line 532, ../sass/partials/_03_structure.scss */
+/* line 525, ../sass/partials/_03_structure.scss */
 .cf {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 539, ../sass/partials/_03_structure.scss */
+/* line 532, ../sass/partials/_03_structure.scss */
 .pie {
   behavier: url("https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/PIE.htc");
 }

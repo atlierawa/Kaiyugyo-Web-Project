@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /* line 64, ../img/i01_banner/*.png */
 .i01_banner-sprite, .i01_banner-c0, .i01_banner-g0, .i01_banner-k0 {
-  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i01_banner-s948644e46a.png');
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i01_banner-s9ac8fb2522.png');
   background-repeat: no-repeat;
 }
 
 /* line 80, ../img/i03-2_cafe/*.png */
 .i03-2_cafe-sprite, .i03-2_cafe-c2, .i03-2_cafe-c3, .i03-2_cafe-c4, .i03-2_cafe-c5, .i03-2_cafe-c6 {
-  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i03-2_cafe-sc7f5422289.png');
+  background-image: url('https://dl.dropboxusercontent.com/u/2997478/kyg-samples/img/i03-2_cafe-s930e9049bc.png');
   background-repeat: no-repeat;
 }
 
