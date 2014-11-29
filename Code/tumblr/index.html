@@ -10,7 +10,7 @@
 
   Designed and coded by Creative Office OUR*IRO
   http://atlierawa.tumblr.com
-  Last updated 2014.11.23 / Ver 0.98
+  Last updated 2014.11.29 / Ver 0.99
 -->
 <html>
 <head>
@@ -34,7 +34,7 @@
 <!-- CSS files -->
 <link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/vendor/normalize.css">
 <link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/css/style.css">
-<link rel="stylesheet" href="js/Boxer-master/jquery.fs.boxer.css">
+<link href="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/js/Boxer-master/jquery.fs.boxer.css" rel="stylesheet">
 <!--[if lt IE 9]>
   <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -423,7 +423,7 @@
       {block:Photo}
       <li class="ls-n mb130">
         <section>
-          <img src="{PhotoURL-400}" alt="{PhotoAlt}" />
+          <a href="{PhotoURL-500}" class="boxer" title="{Caption}" data-gallery="gallery"><img src="{PhotoURL-400}" alt="{PhotoAlt}" /></a>
           {block:Caption}{Caption}{/block:Caption}
           <footer class="post-date">{block:Date}&mdash;&nbsp;{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}{/block:Date}</footer>
         </section>
@@ -451,6 +451,7 @@
 <!-- jQuery libs and scripts -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/js/scripts.js"></script>
+<script src="https://dl.dropboxusercontent.com/u/2997478/kyg-samples/js/Boxer-master/jquery.fs.boxer.js"></script>
 <script type="text/javascript"> // Minimized Google Analytics code
 $(window).on('load',function(){
   $.getScript('//www.google-analytics.com/analytics.js');
@@ -482,6 +483,11 @@ $(function () {
       window.location.href = k;
     }
   });
+});
+</script>
+<script type="text/javascript"> // jQuery Boxer
+$(document).ready(function(){
+  $(".boxer").boxer();
 });
 </script>
 </body>
